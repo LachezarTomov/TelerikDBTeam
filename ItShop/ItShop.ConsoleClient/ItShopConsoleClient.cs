@@ -17,10 +17,9 @@ namespace ItShop.ConsoleClient
     {
         static void Main(string[] args)
         {
-
+            Database.SetInitializer(
+                new MigrateDatabaseToLatestVersion<ItShopDbContext, Configuration>());
             var db = new ItShopDbContext();
-
-        //    FillData();
 
             DateTime fromDate = new DateTime(2014, 8, 30, 0, 0, 0);
             DateTime toDate = new DateTime(2014, 8, 31, 23, 59, 59);
@@ -33,26 +32,20 @@ namespace ItShop.ConsoleClient
             xmlParser.SaveSalesReportToXML(salesInRange, "report.xml");
 
             // Load XML File to save in MSSQL DB
-            IList<Store> stores =  xmlParser.LoadXml("expenses.xml");
+          //  IList<Store> expensesList =  xmlParser.LoadXml("expenses.xml");
 
-            foreach (var store in stores)
-            {
-                var expenses = store.Expenses;
-                foreach (var item in expenses)
-                {
-                    var checkIfExpenceExist = db.StoresExpenses
-                        .Where(x => x.ForDate.Year == item.ForDate.Year &&
-                            x.ForDate.Month == item.ForDate.Month).Count();
+            //foreach (var item in expensesList)
+            //{
+            //    var checkIfExist = db.StoresExpenses
+            //        .Where(x => x.ForDate.Year == item.ForDate.Year &&
+            //            x.ForDate.Month == item.ForDate.Month).Count();
 
-                    if (checkIfExpenceExist <= 0)
-                    {
-                        db.StoresExpenses.Add(item);
-                    }
-                }
-            }
+            //    if (checkIfExist <= 0)
+            //    {
+            //        db.StoresExpenses.Add(item);
+            //    }
+            //}
 
-            db.SaveChanges();
-            
             //try
             //{
             //    db.SaveChanges();
@@ -71,24 +64,24 @@ namespace ItShop.ConsoleClient
             //}
         }
 
-        private static void FillStoresExpensesInMongoDB(IList<Store> stores)
+        private void FillStoresExpensesInMongoDB(IList<StoresExpenses> expensesList)
         {
-            //MongoClient client = new MongoClient(); // connect to localhost
-            //MongoServer server = client.GetServer();
-            //MongoDatabase db = server.GetDatabase("StoresExpensesReports");
+            MongoClient client = new MongoClient(); // connect to localhost
+            MongoServer server = client.GetServer();
+            MongoDatabase db = server.GetDatabase("StoreExpensesReports");
 
-            //MongoCollection<BsonDocument> expensesReports = db.GetCollection<BsonDocument>("ExpensesReports");
+            MongoCollection<BsonDocument> expensesReports = db.GetCollection<BsonDocument>("ExpensesReports");
 
-            //foreach (var expense in stores)
-            //{
-            //    BsonDocument document = new BsonDocument {
-            //        { "StoreId", expense.StoreId },
-            //        { "ForDate", expense.ForDate },
-            //        { "Amount", expense.Amount.ToString() }
-            //    };
+            foreach (var expense in expensesList)
+            {
+                BsonDocument document = new BsonDocument {
+                    { "StoreId", expense.StoreId },
+                    { "ForDate", expense.ForDate },
+                    { "Amount", expense.Amount.ToString() }
+                };
 
-            //    expensesReports.Insert(document);
-            //}
+                expensesReports.Insert(document);
+            }
             
         }
 
