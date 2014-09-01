@@ -44,17 +44,19 @@ namespace ItShop.ConsoleClient
 
             using (XmlReader reader = XmlReader.Create(fileName))
             {
-                Store store;
+                Store store = new Store();
                 int idStore = 0;
+               
                 while (reader.Read())
                 {
                     if (reader.NodeType == XmlNodeType.EndElement)
                     {
                         if(reader.Name == "store")
                         {
-
+                            listOfStores.Add(store);
                         }
                     }
+
                     if (reader.NodeType == XmlNodeType.Element)
                     {
                         Console.WriteLine(reader.Name + " " + reader.Value + " " + reader.NodeType);
@@ -63,21 +65,23 @@ namespace ItShop.ConsoleClient
                         {
                             case "store":
                                 idStore = Convert.ToInt32(reader.GetAttribute("id"));
+                                store = new Store();
+                                store.StoreName = reader.GetAttribute("name");
                                 break;
                             case "expenses":
-                                store = new Store();
+                                StoresExpenses expense = new StoresExpenses();
                                 string[] readedDate = reader.GetAttribute("date").Split(new char[] { '.' });
                                 int year = Convert.ToInt32(readedDate[1]);
                                 int month = Convert.ToInt32(readedDate[0]);
-                              //  store.ForDate = new DateTime(year, month, 1);
-                               // store.StoreId = idStore;
+                                expense.ForDate = new DateTime(year, month, 1);
+                                expense.StoreId = idStore;
                                                                 
-                                //if (reader.Read())
-                                //{
-                                //    store.Amount = Convert.ToDecimal(reader.Value);
-                                //}
-                                
-                                //listOfStores.Add(store);
+                                if (reader.Read())
+                                {
+                                    expense.Amount = Convert.ToDecimal(reader.Value);
+                                }
+
+                                store.Expenses.Add(expense);
 
                                 break;
                         }

@@ -15,8 +15,9 @@ namespace ItShop.Data
         public ItShopDbContext()
             : base("name=ItShop")
         {
-            
-            
+            Database.SetInitializer(
+                    new MigrateDatabaseToLatestVersion<ItShopDbContext, Configuration>());
+
         }
         public IDbSet<Product> Products { get; set; }
 
