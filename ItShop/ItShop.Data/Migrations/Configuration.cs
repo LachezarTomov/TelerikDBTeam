@@ -5,7 +5,7 @@ namespace ItShop.Data.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    public sealed class Configuration : DbMigrationsConfiguration<ItShop.Data.ItShopDbContext>
+    public sealed class Configuration : DbMigrationsConfiguration<ItShopDbContext>
     {
         public Configuration()
         {
@@ -14,7 +14,7 @@ namespace ItShop.Data.Migrations
             this.ContextKey = "ItShop.Data.ItShopDbContext";
         }
 
-        protected override void Seed(ItShop.Data.ItShopDbContext context)
+        protected override void Seed(ItShopDbContext context)
         {
         }
     }
