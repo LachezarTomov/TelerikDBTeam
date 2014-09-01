@@ -1,0 +1,12 @@
+C:\Users\Alexander\Documents\GitHub\TelerikDBTeam\ItShop\ItShop.Data\bin\Debug\ItShop.Data.dll.config
+C:\Users\Alexander\Documents\GitHub\TelerikDBTeam\ItShop\ItShop.Data\bin\Debug\ItShop.Data.dll
+C:\Users\Alexander\Documents\GitHub\TelerikDBTeam\ItShop\ItShop.Data\bin\Debug\ItShop.Data.pdb
+C:\Users\Alexander\Documents\GitHub\TelerikDBTeam\ItShop\ItShop.Data\bin\Debug\EntityFramework.dll
+C:\Users\Alexander\Documents\GitHub\TelerikDBTeam\ItShop\ItShop.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Alexander\Documents\GitHub\TelerikDBTeam\ItShop\ItShop.Data\bin\Debug\ItShop.Model.dll
+C:\Users\Alexander\Documents\GitHub\TelerikDBTeam\ItShop\ItShop.Data\bin\Debug\ItShop.Model.pdb
+C:\Users\Alexander\Documents\GitHub\TelerikDBTeam\ItShop\ItShop.Data\bin\Debug\EntityFramework.xml
+C:\Users\Alexander\Documents\GitHub\TelerikDBTeam\ItShop\ItShop.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Alexander\Documents\GitHub\TelerikDBTeam\ItShop\ItShop.Data\obj\Debug\ItShop.Data.csprojResolveAssemblyReference.cache
+C:\Users\Alexander\Documents\GitHub\TelerikDBTeam\ItShop\ItShop.Data\obj\Debug\ItShop.Data.dll
+C:\Users\Alexander\Documents\GitHub\TelerikDBTeam\ItShop\ItShop.Data\obj\Debug\ItShop.Data.pdb
