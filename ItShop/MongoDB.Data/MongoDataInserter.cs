@@ -17,25 +17,25 @@
 
         public void AddStore(Store store)
         {
-            var stores = this.database.GetCollection("Stores");
+            var stores = this.database.GetCollection<Store>("Stores");
             stores.Insert(store);
         }
 
         public void AddProduct(Product product)
         {
-            var products = this.database.GetCollection("Products");
+            var products = this.database.GetCollection<Product>("Products");
             products.Insert(product);
         }
 
         public void AddManufacturer(Manufacturer manufacturer)
         {
-            var manufacturers = this.database.GetCollection("Manufacturers");
+            var manufacturers = this.database.GetCollection<Manufacturer>("Manufacturers");
             manufacturers.Insert(manufacturer);
         }
 
         public void AddDealer(Sale sale)
         {
-            var sales = this.database.GetCollection("Sales");
+            var sales = this.database.GetCollection<Sale>("Sales");
             sales.Insert(sale);
         }
 

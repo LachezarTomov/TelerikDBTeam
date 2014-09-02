@@ -5,9 +5,9 @@
 
     public class Sale
     {
-        [BsonConstructor]
         public Sale(string store, string product, int quantity, decimal salePrice, BsonDateTime date)
         {
+          //  this.SaleID = ObjectId.GenerateNewId().ToString();
             this.Store = store;
             this.Product = product;
             this.Quantity = quantity;
@@ -15,8 +15,8 @@
             this.Date = date;
         }
 
-        [BsonId]
-        public ObjectId SaleID { get; set; }
+        [BsonRepresentation(BsonType.ObjectId)]
+        public string SaleID { get; set; }
 
         public string Store { get; set; }
 

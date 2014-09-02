@@ -6,17 +6,18 @@
     public class Product
     {
 
-        [BsonConstructor]
+       
         public Product(string name, string category, string manufacturer, decimal price)
         {
+            //this.ProductID = ObjectId.GenerateNewId().ToString();
             this.ProductName = name;
             this.Category = category;
             this.Manufacturer = manufacturer;
             this.Price = price;
         }
 
-        [BsonId]
-        public ObjectId ProductID { get; set; }
+        [BsonRepresentation(BsonType.ObjectId)]
+        public string ProductID { get; set; }
 
         public string ProductName { get; set; }
 

@@ -5,16 +5,16 @@
 
     public class Store
     {
-        [BsonConstructor]
         public Store(string name, string address, string town)
         {
+           // this.StoreID = ObjectId.GenerateNewId().ToString();
             this.StoreName = name;
             this.Address = address;
             this.Town = town;     
         }
 
-        [BsonId]
-        public ObjectId StoreID { get; set; }
+        [BsonRepresentation(BsonType.ObjectId)]
+        public string StoreID { get; set; }
 
         public string StoreName { get; set; }
 

@@ -5,16 +5,16 @@
 
     public class Manufacturer
     {
-        [BsonConstructor]
         public Manufacturer(string name, string description, string manager)
         {
+            //this.ManufacturerID = ObjectId.GenerateNewId().ToString();
             this.ManufacturerName = name;
             this.Description = description;
             this.CEO = manager;
         }
 
-        [BsonId]
-        public ObjectId ManufacturerID { get; set; }
+        [BsonRepresentation(BsonType.ObjectId)]
+        public string ManufacturerID { get; set; }
 
         public string ManufacturerName { get; set; }
 

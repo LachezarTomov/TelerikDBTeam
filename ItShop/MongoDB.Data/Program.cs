@@ -18,6 +18,8 @@
             var server = client.GetServer();
             var database = server.GetDatabase("ItShop");
 
+            var seeder = new MongoDataSeeder();
+
             if (!database.CollectionExists("Manufacturers"))
             {
                database.CreateCollection("Manufacturers"); 
@@ -34,10 +36,33 @@
             {
                database.CreateCollection("Sales"); 
             }
+
+           // Id = ObjectId.GenerateNewId().ToString();
             
             //TODO: Serializer!?!!?
-            MongoDataSeeder.Seeder();
+            MongoDataSeeder.ManufacturerSeeder();
+           // var inserter = new MongoDataInserter();
+            
+           // var manufacturersCollection = database.GetCollection("Manufacturers");
 
+            //Manufacturer[] manufacturersToInsert = {
+            //                 new Manufacturer("Dell Inc.", "Worldwide leader in computer development", "Michael Dell"),
+            //                 new Manufacturer("Hewlett-Packard", "Worldwide leader in hardware, software and services", "Meg Whitman"),
+            //                 new Manufacturer("IBM Inc.", "Worldwide leader in computer development", "Michael Dell"),
+            //                 new Manufacturer("Toshiba Corporation", "Worldwide leader in engineering and electronics conglomerate", "Hisao Tanaka"),
+            //                 new Manufacturer("ASUSTeK Computer Inc.", "Computer hardware and electronics company", "Jonney Shih"),
+            //                 new Manufacturer("Lenovo Group Ltd.", "Leader in computer technology", "Yang Yuanqing"),
+            //                 new Manufacturer("Micro-Star International Co., Ltd (MSI)", "Large information technology manufacturer", "Xu Xiang"),
+            //                 new Manufacturer("Apple Inc.", "Worldwide leader in consumer electronics, computer software, online services, and personal computers", "Tim Cook"),
+            //                 new Manufacturer("Acer Inc.", "Leader in hardware and electronics corporation", "Stan Shih"),
+            //                 new Manufacturer("Sony Corporation", "Worldwide leader in electronics, game, entertainment", "Kazuo Hirai")
+            //             };
+
+            //manufacturersCollection.InsertBatch(manufacturersToInsert);
+           // manufacturersCollection.Insert(new Manufacturer("Dell Inc.", "Worldwide leader in computer development", "Michael Dell"));
+            //inserter.AddManufacturer(new Manufacturer("Dell Inc.", "Worldwide leader in computer development", "Michael Dell"));
+
+            
         }
     }
 }
