@@ -5,7 +5,6 @@
 
     public class Sale
     {
-
         [BsonConstructor]
         public Sale(string store, string product, int quantity, decimal salePrice, BsonDateTime date)
         {
@@ -34,6 +33,5 @@
             //TODO: to see if reequired
             return base.ToString();
         }
-
     }
 }
