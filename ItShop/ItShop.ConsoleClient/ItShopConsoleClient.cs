@@ -21,7 +21,11 @@ namespace ItShop.ConsoleClient
         {
             Database.SetInitializer(
                 new MigrateDatabaseToLatestVersion<ItShopDbContext, Configuration>());
+            
             var db = new ItShopDbContext();
+
+            
+
             //FillData();
             /* 
              * TEST MILAN
@@ -38,39 +42,36 @@ namespace ItShop.ConsoleClient
             //XMLWriter xmlWriter = new XMLWriter();
             //xmlWriter.SaveSalesReportToXML(fromDate, toDate, "report.xml");
 
+            //ZipExcelParser parserFromExcel = new ZipExcelParser(db);
+            //IList<Sale> sales = parserFromExcel.LoadData();// to load data to the server tomorrow
 
-            //Adds sales with reports from zipped excel file
-            ZipExcelParser parserFromExcel = new ZipExcelParser(db);
-            IList<Sale> sales = parserFromExcel.LoadData();// to load data to the server tomorrow
-
-            foreach (var sale in sales)
-            {
-                db.Sales.Add(sale);
-                //Console.Write("Store id:" + sale.StoreId);
-                //Console.Write("Sale date:" + sale.SaleDate);
-                //Console.WriteLine();
-                //foreach (var saleDetail in sale.SaleDetails)
-                //{
-                //    Console.Write("Price: " + saleDetail.SalePrice + " ");
-                //    Console.Write("Quantity: " + saleDetail.Quantity + " ");
-                //    Console.WriteLine();
-                //}
-            }
-            db.SaveChanges();
+            //foreach (var sale in sales)
+            //{
+            //    Console.Write("Store id:" + sale.StoreId);
+            //    Console.Write("Sale date:" + sale.SaleDate);
+            //    Console.WriteLine();
+            //    foreach (var saleDetail in sale.SaleDetails)
+            //    {
+            //        Console.Write("Price: " + saleDetail.SalePrice + " ");
+            //        Console.Write("Quantity: " + saleDetail.Quantity + " ");
+            //        Console.WriteLine();
+            //    }
+            //}
 
             // Load XML File to save in MSSQL DB
             XMLReader xmlReader = new XMLReader();
             
             // Load data XML data in MSSQL
             IList<Store> expensesList = xmlReader.LoadStoreReportsFromXml("expenses.xml");
-            SaveExpensesReportsInMSSQL(expensesList);
-          
+            SaveExpensesReportsInMSSQL(expensesList, db);
+
+            FillStoresExpensesInMongoDB(expensesList);
         }
 
-        private static void SaveExpensesReportsInMSSQL(IList<Store> storesList)
+        private static void SaveExpensesReportsInMSSQL(IList<Store> storesList, ItShopDbContext db)
         {
-            var db = new ItShopDbContext();
-            using (db)
+           // var db = new ItShopDbContext();
+           // using (db)
             {
                 foreach (var store in storesList)
                 {
@@ -91,26 +92,21 @@ namespace ItShop.ConsoleClient
             }
         }
 
-        private void FillStoresExpensesInMongoDB(IList<StoresExpenses> expensesList)
+        private static void FillStoresExpensesInMongoDB(IList<Store> stores)
         {
             MongoClient client = new MongoClient(); // connect to localhost
             MongoServer server = client.GetServer();
-            MongoDatabase db = server.GetDatabase("StoreExpensesReports");
+            MongoDatabase db = server.GetDatabase("ItShop");
 
             MongoCollection<BsonDocument> expensesReports = db.GetCollection<BsonDocument>("ExpensesReports");
 
-            foreach (var expense in expensesList)
+            foreach (var store in stores)
             {
-                BsonDocument document = new BsonDocument {
-                    { "StoreId", expense.StoreId },
-                    { "ForDate", expense.ForDate },
-                    { "Amount", expense.Amount.ToString() }
-                };
-
-                expensesReports.Insert(document);
+                expensesReports.Insert(store);
             }
-            
         }
+            
+       
 
         private static void FillData()
         {

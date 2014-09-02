@@ -18,7 +18,7 @@ namespace XMLManager
             using (XmlReader reader = XmlReader.Create(pathToXmlFile+fileName))
             {
                 Store store = new Store();
-                int idStore = 0;
+                int storeId = 0;
 
                 while (reader.Read())
                 {
@@ -37,9 +37,10 @@ namespace XMLManager
                         switch (reader.Name)
                         {
                             case "store":
-                                idStore = Convert.ToInt32(reader.GetAttribute("id"));
+                                storeId = Convert.ToInt32(reader.GetAttribute("id"));
                                 store = new Store();
                                 store.StoreName = reader.GetAttribute("name");
+                                store.StoreId = storeId;
                                 break;
                             case "expenses":
                                 StoresExpenses expense = new StoresExpenses();
@@ -47,7 +48,7 @@ namespace XMLManager
                                 int year = Convert.ToInt32(readedDate[1]);
                                 int month = Convert.ToInt32(readedDate[0]);
                                 expense.ForDate = new DateTime(year, month, 1);
-                                expense.StoreId = idStore;
+                                expense.StoreId = storeId;
 
 
                                 if (reader.Read())
