@@ -16,8 +16,8 @@
             this.Price = price;
         }
 
-        [BsonRepresentation(BsonType.ObjectId)]
-        public string ProductID { get; set; }
+        //[BsonRepresentation(BsonType.ObjectId)]
+        //public string ProductID { get; set; }
 
         public string ProductName { get; set; }
 

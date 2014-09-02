@@ -51,7 +51,7 @@
     <Compile Include="MongoDataInserter.cs" />
     <Compile Include="MongoDataReader.cs" />
     <Compile Include="MongoDataSeeder.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="MongoDataMain.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

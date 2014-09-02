@@ -13,8 +13,8 @@
             this.Town = town;     
         }
 
-        [BsonRepresentation(BsonType.ObjectId)]
-        public string StoreID { get; set; }
+        //[BsonRepresentation(BsonType.ObjectId)]
+        //public string StoreID { get; set; }
 
         public string StoreName { get; set; }
 
