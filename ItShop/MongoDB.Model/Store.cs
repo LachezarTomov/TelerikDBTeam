@@ -25,7 +25,6 @@
         public override string ToString()
         {
             return this.StoreName + " " + this.Address + " " + this.Town;
-        }
- 
+        } 
     }
 }

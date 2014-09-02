@@ -7,7 +7,6 @@
     {
 
         [BsonConstructor]
-
         public Product(string name, string category, string manufacturer, decimal price)
         {
             this.ProductName = name;
@@ -31,6 +30,5 @@
         {
             return string.Format("ProductID: {0}, Category: {1}, Manufacturer {2}, Price {3}", this.ProductName, this.Category, this.Manufacturer, this.Price);
         }
-
     }
 }
