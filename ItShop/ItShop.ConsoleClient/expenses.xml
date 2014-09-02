@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stores-expenses>
+	<store name="Main store" id="1">
+		<expenses date="02.2014">50.50</expenses>
+		<expenses date="03.2014">150.20</expenses>
+		<expenses date="04.2014">77.00</expenses>
+	</store>
+</stores-expenses>

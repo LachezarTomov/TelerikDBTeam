@@ -20,7 +20,7 @@ namespace ItShop.ConsoleClient
         {
             Database.SetInitializer(
                 new MigrateDatabaseToLatestVersion<ItShopDbContext, Configuration>());
-            var db = new ItShopDbContext();
+            
             //FillData();
             /* 
              * TEST MILAN
@@ -37,38 +37,37 @@ namespace ItShop.ConsoleClient
             XMLWriter xmlWriter = new XMLWriter();
             xmlWriter.SaveSalesReportToXML(fromDate, toDate, "report.xml");
 
-
             // Load XML File to save in MSSQL DB
-          //  IList<Store> expensesList =  xmlParser.LoadXml("expenses.xml");
+            XMLReader xmlReader = new XMLReader();
+            
+            // Load data XML data in MSSQL
+            IList<Store> expensesList = xmlReader.LoadStoreReportsFromXml("expenses.xml");
+            SaveExpensesReportsInMSSQL(expensesList);
+          
+        }
 
-            //foreach (var item in expensesList)
-            //{
-            //    var checkIfExist = db.StoresExpenses
-            //        .Where(x => x.ForDate.Year == item.ForDate.Year &&
-            //            x.ForDate.Month == item.ForDate.Month).Count();
+        private static void SaveExpensesReportsInMSSQL(IList<Store> storesList)
+        {
+            var db = new ItShopDbContext();
+            using (db)
+            {
+                foreach (var store in storesList)
+                {
+                    var expenses = store.Expenses;
+                    foreach (var expense in expenses)
+                    {
+                        var checkIfExist = db.StoresExpenses
+                            .Where(x => x.ForDate.Year == expense.ForDate.Year && x.ForDate.Month == expense.ForDate.Month).Count();
 
-            //    if (checkIfExist <= 0)
-            //    {
-            //        db.StoresExpenses.Add(item);
-            //    }
-            //}
+                        if (checkIfExist <= 0)
+                        {
+                            db.StoresExpenses.Add(expense);
+                        }
+                    }
+                }
 
-            //try
-            //{
-            //    db.SaveChanges();
-            //}
-            //catch (DbEntityValidationException e)
-            //{
-            //    Console.WriteLine(e.Message);
-
-            //    foreach (var item in e.EntityValidationErrors)
-            //    {
-            //        foreach (var err in item.ValidationErrors)
-            //        {
-            //            Console.WriteLine(err.ErrorMessage);
-            //        }
-            //    }
-            //}
+                db.SaveChanges();
+            }
         }
 
         private void FillStoresExpensesInMongoDB(IList<StoresExpenses> expensesList)
