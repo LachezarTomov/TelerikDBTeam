@@ -44,9 +44,17 @@
             /// Comment out after data is seeded!
             /// </note>
 
-            MongoDataSeeder.ManufacturerSeeder();
-            MongoDataSeeder.ProductSeeder();
-            MongoDataSeeder.StoreSeeder();
+            //MongoDataSeeder.ManufacturerSeeder();
+            //MongoDataSeeder.ProductSeeder();
+            //MongoDataSeeder.StoreSeeder();
+
+            var reader = new MongoDataReader();
+
+            var products = reader.GetProducts();
+            foreach (var product in products)
+            {
+                Console.WriteLine(product);
+            }
 
         }
     }
