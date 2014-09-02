@@ -45,7 +45,7 @@
 
         private String[] GetAllFilesFromDirectory()
         {
-            UnzipFile();
+            //UnzipFile();
             String[] allfiles = Directory.GetFiles(DIRECTORY_ROOT, FilePattern, SearchOption.AllDirectories);
             return allfiles;
         }

@@ -9,6 +9,7 @@ using MongoDB.Bson;
 using ItShop.Data;
 using ItShop.Model;
 using ItShop.Data.Migrations;
+using ItShop.Data.MySql;
 using ExcelManager;
 using XMLManager;
 using ZipFileManager;
@@ -31,6 +32,7 @@ namespace ItShop.ConsoleClient
              * TEST MILAN
              */
 
+            MysqlManager.UpdateDatabase();
    //         ExcelManager.ExcelReader.ReadFromExcel2003File();
    //         ExcelWriter.CreateExcel2007PlusFile();
             /*
