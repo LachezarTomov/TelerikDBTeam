@@ -4,16 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{815874FF-5612-4E48-919A-3CBD5EF3F5BA}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{8BAF2CB6-D6A6-4207-A8FE-97FBAB730476}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ItShop.ConsoleClient</RootNamespace>
-    <AssemblyName>ItShop.ConsoleClient</AssemblyName>
+    <RootNamespace>XMLManager</RootNamespace>
+    <AssemblyName>XMLManager</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -38,12 +36,6 @@
     <Reference Include="EntityFramework.SqlServer">
       <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
-    <Reference Include="MongoDB.Bson">
-      <HintPath>..\packages\mongocsharpdriver.1.9.2\lib\net35\MongoDB.Bson.dll</HintPath>
-    </Reference>
-    <Reference Include="MongoDB.Driver">
-      <HintPath>..\packages\mongocsharpdriver.1.9.2\lib\net35\MongoDB.Driver.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -54,19 +46,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ItShopConsoleClient.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="XMLParser.cs" />
+    <Compile Include="XMLWriter.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ExcelManager\ExcelManager.csproj">
-      <Project>{704bf6a3-dae3-44e9-86c5-eaef08482cec}</Project>
-      <Name>ExcelManager</Name>
-    </ProjectReference>
     <ProjectReference Include="..\ItShop.Data\ItShop.Data.csproj">
       <Project>{ae066734-8594-4678-b0f9-3d087ec42bcb}</Project>
       <Name>ItShop.Data</Name>
@@ -75,10 +58,10 @@
       <Project>{099f93da-123f-490c-a041-82ae961f4318}</Project>
       <Name>ItShop.Model</Name>
     </ProjectReference>
-    <ProjectReference Include="..\XMLManager\XMLManager.csproj">
-      <Project>{8baf2cb6-d6a6-4207-a8fe-97fbab730476}</Project>
-      <Name>XMLManager</Name>
-    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

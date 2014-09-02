@@ -7,3 +7,12 @@ C:\Users\milan\Documents\TelerikDBTeam\ItShop\MongoDB.Model\bin\Debug\MongoDB.Dr
 C:\Users\milan\Documents\TelerikDBTeam\ItShop\MongoDB.Model\obj\Debug\MongoDB.Model.csprojResolveAssemblyReference.cache
 C:\Users\milan\Documents\TelerikDBTeam\ItShop\MongoDB.Model\obj\Debug\MongoDB.Model.dll
 C:\Users\milan\Documents\TelerikDBTeam\ItShop\MongoDB.Model\obj\Debug\MongoDB.Model.pdb
+D:\TELERIK\Databases\Teamwork\sasho\TelerikDBTeam\ItShop\MongoDB.Model\bin\Debug\MongoDB.Model.dll
+D:\TELERIK\Databases\Teamwork\sasho\TelerikDBTeam\ItShop\MongoDB.Model\bin\Debug\MongoDB.Model.pdb
+D:\TELERIK\Databases\Teamwork\sasho\TelerikDBTeam\ItShop\MongoDB.Model\bin\Debug\MongoDB.Bson.dll
+D:\TELERIK\Databases\Teamwork\sasho\TelerikDBTeam\ItShop\MongoDB.Model\bin\Debug\MongoDB.Driver.dll
+D:\TELERIK\Databases\Teamwork\sasho\TelerikDBTeam\ItShop\MongoDB.Model\bin\Debug\MongoDB.Bson.xml
+D:\TELERIK\Databases\Teamwork\sasho\TelerikDBTeam\ItShop\MongoDB.Model\bin\Debug\MongoDB.Driver.xml
+D:\TELERIK\Databases\Teamwork\sasho\TelerikDBTeam\ItShop\MongoDB.Model\obj\Debug\MongoDB.Model.csprojResolveAssemblyReference.cache
+D:\TELERIK\Databases\Teamwork\sasho\TelerikDBTeam\ItShop\MongoDB.Model\obj\Debug\MongoDB.Model.dll
+D:\TELERIK\Databases\Teamwork\sasho\TelerikDBTeam\ItShop\MongoDB.Model\obj\Debug\MongoDB.Model.pdb

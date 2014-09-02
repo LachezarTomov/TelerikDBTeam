@@ -1,2 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<sales />
+<sales>
+	<sale date="02/09/2014">
+		<item product="Laptop HP 556 Cromebook" price="1024.20" />
+		<item product="Laptop Toshiba Satellite C50-B-14" price="620.00" />
+	</sale>
+</sales>
