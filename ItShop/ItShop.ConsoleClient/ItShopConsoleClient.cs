@@ -11,6 +11,7 @@ using ItShop.Model;
 using ItShop.Data.Migrations;
 using ExcelManager;
 using XMLManager;
+using ZipFileManager;
 
 namespace ItShop.ConsoleClient
 {
@@ -31,11 +32,28 @@ namespace ItShop.ConsoleClient
             /*
              * END OF TESTS
              */ 
-            DateTime fromDate = new DateTime(2014, 8, 30, 0, 0, 0);
-            DateTime toDate = new DateTime(2014, 9, 30, 23, 59, 59);
+            //DateTime fromDate = new DateTime(2014, 8, 30, 0, 0, 0);
+            //DateTime toDate = new DateTime(2014, 9, 30, 23, 59, 59);
 
-            XMLWriter xmlWriter = new XMLWriter();
-            xmlWriter.SaveSalesReportToXML(fromDate, toDate, "report.xml");
+            //XMLWriter xmlWriter = new XMLWriter();
+            //xmlWriter.SaveSalesReportToXML(fromDate, toDate, "report.xml");
+
+            ZipExcelParser parserFromExcel = new ZipExcelParser(db);
+            IList<Sale> sales = parserFromExcel.LoadData();// to load data to the server tomorrow
+
+            foreach (var sale in sales)
+            {
+                Console.Write("Store id:" + sale.StoreId);
+                Console.Write("Sale date:" + sale.SaleDate);
+                Console.WriteLine();
+                foreach (var saleDetail in sale.SaleDetails)
+                {
+                    Console.Write("Price: " + saleDetail.SalePrice + " ");
+                    Console.Write("Quantity: " + saleDetail.Quantity + " ");
+                    Console.WriteLine();
+                }
+
+            }
 
             // Load XML File to save in MSSQL DB
             XMLReader xmlReader = new XMLReader();

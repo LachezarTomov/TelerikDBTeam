@@ -79,6 +79,10 @@
       <Project>{8baf2cb6-d6a6-4207-a8fe-97fbab730476}</Project>
       <Name>XMLManager</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ZipFileManager\ZipFileManager.csproj">
+      <Project>{7c367e4b-a924-46f8-8095-9fa8efe5fce3}</Project>
+      <Name>ZipFileManager</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
