@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ItShop.Model
+﻿namespace ItShop.Model
 {
+    using System;
+    using System.ComponentModel.DataAnnotations;
+    using System.ComponentModel.DataAnnotations.Schema;
+    using System.Linq;
+
     public class SaleDetail
     {
         [Key]
@@ -21,7 +18,6 @@ namespace ItShop.Model
         public int SaleId { get; set; }
 
         public virtual Sale Sale { get; set; }
-
 
         public int Quantity { get; set; }
 

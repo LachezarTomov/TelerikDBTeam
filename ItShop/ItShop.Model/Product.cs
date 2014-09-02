@@ -1,14 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ItShop.Model
+﻿namespace ItShop.Model
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+
     public class Product
     {
-        private SaleDetail saleDetails;
+        private ICollection<SaleDetail> saleDetails;
+
         public Product()
         {
             this.SaleDetails = new HashSet<SaleDetail>();
@@ -22,6 +21,24 @@ namespace ItShop.Model
 
         public decimal BasePrice { get; set; }
 
-        public virtual ICollection<SaleDetail> SaleDetails { get; set; }
+        public int ManufacturerId { get; set; }
+
+        public virtual Manufacturer Manufacturer { get; set; }
+
+        public int CategoryId { get; set; }
+
+        public virtual Category Category { get; set; }
+
+        public virtual ICollection<SaleDetail> SaleDetails
+        {
+            get
+            {
+                return this.saleDetails;
+            }
+            set
+            {
+                this.saleDetails = value;
+            }
+        }
     }
 }
