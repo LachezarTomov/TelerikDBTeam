@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30501.0
+VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ItShop.Model", "ItShop.Model\ItShop.Model.csproj", "{099F93DA-123F-490C-A041-82AE961F4318}"
 EndProject
@@ -16,6 +16,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MongoDB.Data", "MongoDB.Data\MongoDB.Data.csproj", "{1169F0FB-21E3-47A4-94E6-0F7041DBD9B4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XMLManager", "XMLManager\XMLManager.csproj", "{8BAF2CB6-D6A6-4207-A8FE-97FBAB730476}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZipFileManager", "ZipFileManager\ZipFileManager.csproj", "{7C367E4B-A924-46F8-8095-9FA8EFE5FCE3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{8BAF2CB6-D6A6-4207-A8FE-97FBAB730476}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8BAF2CB6-D6A6-4207-A8FE-97FBAB730476}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8BAF2CB6-D6A6-4207-A8FE-97FBAB730476}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C367E4B-A924-46F8-8095-9FA8EFE5FCE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C367E4B-A924-46F8-8095-9FA8EFE5FCE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C367E4B-A924-46F8-8095-9FA8EFE5FCE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C367E4B-A924-46F8-8095-9FA8EFE5FCE3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

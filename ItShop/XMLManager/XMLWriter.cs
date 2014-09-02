@@ -20,8 +20,9 @@ namespace XMLManager
                 .ToList();
 
             Encoding encoding = Encoding.GetEncoding("UTF-8");
+            string pathToXmlFile = "..\\..\\";
 
-            using (XmlTextWriter writer = new XmlTextWriter(fileName, encoding))
+            using (XmlTextWriter writer = new XmlTextWriter(pathToXmlFile+fileName, encoding))
             {
                 writer.Formatting = Formatting.Indented;
                 writer.IndentChar = '\t';

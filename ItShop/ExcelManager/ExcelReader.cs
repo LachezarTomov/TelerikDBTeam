@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.OleDb;
 using System.Linq;
 using System.Text;
@@ -9,6 +10,31 @@ namespace ExcelManager
 {
     public static class ExcelReader
     {
+
+        public static DataTable GetXLSFileFirstTable(string filePath)
+        {
+            DataSet sheet1 = new DataSet();
+            OleDbConnectionStringBuilder conString = new OleDbConnectionStringBuilder();
+            conString.Provider = "Microsoft.ACE.OLEDB.12.0";
+            conString.DataSource = filePath;
+            conString.Add("Extended Properties", "Excel 12.0 Xml;HDR=YES");
+
+            using (OleDbConnection connection = new OleDbConnection(conString.ConnectionString))
+            {
+                connection.Open();
+                string selectSql = @"SELECT * FROM [Sheet1$]";
+                using (OleDbDataAdapter adapter = new OleDbDataAdapter(selectSql, connection))
+                {
+                    adapter.Fill(sheet1);
+                }
+                connection.Close();
+            }
+
+            DataTable table = sheet1.Tables[0];
+
+            return table;
+        }
+
         public static void ReadFromExcel2003File()
         {
             var connectionString =
