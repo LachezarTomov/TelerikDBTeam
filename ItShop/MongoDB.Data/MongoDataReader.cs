@@ -15,7 +15,7 @@ namespace MongoDB.Data
         {
             var mongoClient = new MongoClient("mongodb://localhost/");
             var mongoServer = mongoClient.GetServer();
-            this.database = mongoServer.GetDatabase("CarDealersSystem");
+            this.database = mongoServer.GetDatabase("ItShop");
         }
 
         public IEnumerable<Store> GetStores()
