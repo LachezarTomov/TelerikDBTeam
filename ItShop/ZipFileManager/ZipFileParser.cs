@@ -40,12 +40,13 @@
                 sales.Add(sale);
             }
 
+            this.DeleteFile();
             return sales;
         }
 
         private String[] GetAllFilesFromDirectory()
         {
-            //UnzipFile();
+            UnzipFile();
             String[] allfiles = Directory.GetFiles(DIRECTORY_ROOT, FilePattern, SearchOption.AllDirectories);
             return allfiles;
         }
@@ -53,8 +54,7 @@
 
         private Sale CreateSaleObjectFromDataTable(DataTable table, string dirNameDate)
         {
-
-            string shopName = table.Columns[0].ColumnName;
+            string shopName = table.Columns[0].ColumnName.TrimStart().TrimEnd().Replace('#', '.');
 
             int findStoreWithMatchingTableName = this.DataBase.Stores.First(st => st.StoreName.Equals(shopName)).StoreId;
 
@@ -87,6 +87,11 @@
         private void UnzipFile()
         {
             ZipFile.ExtractToDirectory(DIRECTORY_ROOT + "\\Sale-Reports.zip", DIRECTORY_ROOT);
+        }
+
+        private void DeleteFile()
+        {
+            Directory.Delete(DIRECTORY_ROOT + "\\Sale-Reports", true);
         }
     }
 }
