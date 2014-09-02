@@ -63,6 +63,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ExcelManager\ExcelManager.csproj">
+      <Project>{704bf6a3-dae3-44e9-86c5-eaef08482cec}</Project>
+      <Name>ExcelManager</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ItShop.Data\ItShop.Data.csproj">
       <Project>{ae066734-8594-4678-b0f9-3d087ec42bcb}</Project>
       <Name>ItShop.Data</Name>

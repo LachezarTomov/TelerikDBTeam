@@ -9,7 +9,7 @@ using MongoDB.Bson;
 using ItShop.Data;
 using ItShop.Model;
 using ItShop.Data.Migrations;
-
+using ExcelManager;
 
 namespace ItShop.ConsoleClient
 {
@@ -20,7 +20,15 @@ namespace ItShop.ConsoleClient
             Database.SetInitializer(
                 new MigrateDatabaseToLatestVersion<ItShopDbContext, Configuration>());
             var db = new ItShopDbContext();
+            /* 
+             * TEST MILAN
+             */
 
+            ExcelManager.ExcelReader.ReadFromExcel2003File();
+            ExcelWriter.CreateExcel2007PlusFile();
+            /*
+             * END OF TESTS
+             */ 
             DateTime fromDate = new DateTime(2014, 8, 30, 0, 0, 0);
             DateTime toDate = new DateTime(2014, 8, 31, 23, 59, 59);
 

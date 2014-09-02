@@ -9,3 +9,13 @@ ItShop/ItShop.Data/App.config
 ItShop/ItShop.Data/obj/Debug/ItShop.Data.csproj.FileListAbsolute.txt
 
 ItShop/ItShop.Model/obj/Debug/ItShop.Model.csproj.FileListAbsolute.txt
+ITShop/ItShop.suo
+ITShop/bin/*
+ITShop/obj/*
+ItShop/ItShop.Data/bin/*
+*.exe
+*.cache
+*.dll
+*.exe
+**/bin
+**/obj

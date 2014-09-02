@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ItShop.ConsoleClient", "ItS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MongoDB.Model", "MongoDB.Model\MongoDB.Model.csproj", "{0ADF6883-FAC0-48E4-80E7-399E90213A61}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcelManager", "ExcelManager\ExcelManager.csproj", "{704BF6A3-DAE3-44E9-86C5-EAEF08482CEC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{0ADF6883-FAC0-48E4-80E7-399E90213A61}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0ADF6883-FAC0-48E4-80E7-399E90213A61}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0ADF6883-FAC0-48E4-80E7-399E90213A61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{704BF6A3-DAE3-44E9-86C5-EAEF08482CEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{704BF6A3-DAE3-44E9-86C5-EAEF08482CEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{704BF6A3-DAE3-44E9-86C5-EAEF08482CEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{704BF6A3-DAE3-44E9-86C5-EAEF08482CEC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
