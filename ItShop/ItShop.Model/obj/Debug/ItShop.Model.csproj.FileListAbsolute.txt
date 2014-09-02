@@ -18,3 +18,13 @@ C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.Model\bin\Debug\EntityFrame
 C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.Model\obj\Debug\ItShop.Model.csprojResolveAssemblyReference.cache
 C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.Model\obj\Debug\ItShop.Model.dll
 C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.Model\obj\Debug\ItShop.Model.pdb
+C:\Users\Dobri\Desktop\GitProjects\TelerikDBTeam\ItShop\ItShop.Model\bin\Debug\ItShop.Model.dll.config
+C:\Users\Dobri\Desktop\GitProjects\TelerikDBTeam\ItShop\ItShop.Model\bin\Debug\ItShop.Model.dll
+C:\Users\Dobri\Desktop\GitProjects\TelerikDBTeam\ItShop\ItShop.Model\bin\Debug\ItShop.Model.pdb
+C:\Users\Dobri\Desktop\GitProjects\TelerikDBTeam\ItShop\ItShop.Model\bin\Debug\EntityFramework.dll
+C:\Users\Dobri\Desktop\GitProjects\TelerikDBTeam\ItShop\ItShop.Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Dobri\Desktop\GitProjects\TelerikDBTeam\ItShop\ItShop.Model\bin\Debug\EntityFramework.xml
+C:\Users\Dobri\Desktop\GitProjects\TelerikDBTeam\ItShop\ItShop.Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Dobri\Desktop\GitProjects\TelerikDBTeam\ItShop\ItShop.Model\obj\Debug\ItShop.Model.csprojResolveAssemblyReference.cache
+C:\Users\Dobri\Desktop\GitProjects\TelerikDBTeam\ItShop\ItShop.Model\obj\Debug\ItShop.Model.dll
+C:\Users\Dobri\Desktop\GitProjects\TelerikDBTeam\ItShop\ItShop.Model\obj\Debug\ItShop.Model.pdb
