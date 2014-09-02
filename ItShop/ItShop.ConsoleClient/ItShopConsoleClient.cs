@@ -38,21 +38,25 @@ namespace ItShop.ConsoleClient
             //XMLWriter xmlWriter = new XMLWriter();
             //xmlWriter.SaveSalesReportToXML(fromDate, toDate, "report.xml");
 
+
+            //Adds sales with reports from zipped excel file
             ZipExcelParser parserFromExcel = new ZipExcelParser(db);
             IList<Sale> sales = parserFromExcel.LoadData();// to load data to the server tomorrow
 
             foreach (var sale in sales)
             {
-                Console.Write("Store id:" + sale.StoreId);
-                Console.Write("Sale date:" + sale.SaleDate);
-                Console.WriteLine();
-                foreach (var saleDetail in sale.SaleDetails)
-                {
-                    Console.Write("Price: " + saleDetail.SalePrice + " ");
-                    Console.Write("Quantity: " + saleDetail.Quantity + " ");
-                    Console.WriteLine();
-                }
+                db.Sales.Add(sale);
+                //Console.Write("Store id:" + sale.StoreId);
+                //Console.Write("Sale date:" + sale.SaleDate);
+                //Console.WriteLine();
+                //foreach (var saleDetail in sale.SaleDetails)
+                //{
+                //    Console.Write("Price: " + saleDetail.SalePrice + " ");
+                //    Console.Write("Quantity: " + saleDetail.Quantity + " ");
+                //    Console.WriteLine();
+                //}
             }
+            db.SaveChanges();
 
             // Load XML File to save in MSSQL DB
             XMLReader xmlReader = new XMLReader();
