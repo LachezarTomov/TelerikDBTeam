@@ -59,7 +59,7 @@ namespace ItShop.ConsoleClient
 
                     if (reader.NodeType == XmlNodeType.Element)
                     {
-                        Console.WriteLine(reader.Name + " " + reader.Value + " " + reader.NodeType);
+                       // Console.WriteLine(reader.Name + " " + reader.Value + " " + reader.NodeType);
 
                         switch (reader.Name)
                         {

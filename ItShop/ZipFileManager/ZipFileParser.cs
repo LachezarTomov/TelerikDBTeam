@@ -16,7 +16,7 @@
 
     public class ZipExcelParser
     {
-        private string DIRECTORY_ROOT = @"C:\Users\Dobri\Desktop\GitProjects\TelerikDBTeam\ItShop\ZipFileManager\bin\Debug";
+        private string DIRECTORY_ROOT = @"..\..\..\InputDataFiles";  
         private const string FilePattern = "*.xls*";
 
         public ZipExcelParser(ItShopDbContext db)
@@ -45,7 +45,7 @@
 
         private String[] GetAllFilesFromDirectory()
         {
-           // UnzipFile();
+            UnzipFile();
             String[] allfiles = Directory.GetFiles(DIRECTORY_ROOT, FilePattern, SearchOption.AllDirectories);
             return allfiles;
         }

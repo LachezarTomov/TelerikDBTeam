@@ -52,7 +52,7 @@ namespace ExcelManager
                 {
                     while (reader.Read())
                     {
-                        Console.WriteLine(reader["Name"] + " " + reader["Score"]);
+                       // Console.WriteLine(reader["Name"] + " " + reader["Score"]);
                     }
                 }
             }

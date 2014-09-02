@@ -21,7 +21,7 @@ namespace ItShop.ConsoleClient
         {
             Database.SetInitializer(
                 new MigrateDatabaseToLatestVersion<ItShopDbContext, Configuration>());
-            
+            var db = new ItShopDbContext();
             //FillData();
             /* 
              * TEST MILAN
@@ -52,7 +52,6 @@ namespace ItShop.ConsoleClient
                     Console.Write("Quantity: " + saleDetail.Quantity + " ");
                     Console.WriteLine();
                 }
-
             }
 
             // Load XML File to save in MSSQL DB
