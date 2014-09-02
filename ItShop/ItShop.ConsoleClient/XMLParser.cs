@@ -75,6 +75,7 @@ namespace ItShop.ConsoleClient
                                 int month = Convert.ToInt32(readedDate[0]);
                                 expense.ForDate = new DateTime(year, month, 1);
                                 expense.StoreId = idStore;
+                                
                                                                 
                                 if (reader.Read())
                                 {

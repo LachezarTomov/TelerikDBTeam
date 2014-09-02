@@ -10,6 +10,7 @@ using ItShop.Data;
 using ItShop.Model;
 using ItShop.Data.Migrations;
 using ExcelManager;
+using XMLManager;
 
 namespace ItShop.ConsoleClient
 {
@@ -20,24 +21,22 @@ namespace ItShop.ConsoleClient
             Database.SetInitializer(
                 new MigrateDatabaseToLatestVersion<ItShopDbContext, Configuration>());
             var db = new ItShopDbContext();
+            //FillData();
             /* 
              * TEST MILAN
              */
 
-            ExcelManager.ExcelReader.ReadFromExcel2003File();
-            ExcelWriter.CreateExcel2007PlusFile();
+   //         ExcelManager.ExcelReader.ReadFromExcel2003File();
+   //         ExcelWriter.CreateExcel2007PlusFile();
             /*
              * END OF TESTS
              */ 
             DateTime fromDate = new DateTime(2014, 8, 30, 0, 0, 0);
-            DateTime toDate = new DateTime(2014, 8, 31, 23, 59, 59);
+            DateTime toDate = new DateTime(2014, 9, 30, 23, 59, 59);
 
-            var salesInRange = db.Sales
-                .Where(x => x.SaleDate >= fromDate && x.SaleDate <= toDate)
-                .ToList();
+            XMLWriter xmlWriter = new XMLWriter();
+            xmlWriter.SaveSalesReportToXML(fromDate, toDate, "report.xml");
 
-            XMLParser xmlParser = new XMLParser();
-            xmlParser.SaveSalesReportToXML(salesInRange, "report.xml");
 
             // Load XML File to save in MSSQL DB
           //  IList<Store> expensesList =  xmlParser.LoadXml("expenses.xml");
