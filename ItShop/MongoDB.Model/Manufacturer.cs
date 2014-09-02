@@ -5,7 +5,6 @@
 
     public class Manufacturer
     {
-
         [BsonConstructor]
         public Manufacturer(string name, string description, string manager)
         {

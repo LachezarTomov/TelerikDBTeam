@@ -18,6 +18,8 @@ namespace ItShop.Model
 
         public string ProductName { get; set; }
 
+        public decimal BuyingPrice { get; set; }
+
         public decimal BasePrice { get; set; }
 
         public virtual ICollection<SaleDetail> SaleDetails { get; set; }
