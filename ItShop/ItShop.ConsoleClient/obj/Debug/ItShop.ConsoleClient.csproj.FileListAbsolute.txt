@@ -17,3 +17,6 @@ C:\Users\Alexander\Documents\GitHub\TelerikDBTeam\ItShop\ItShop.ConsoleClient\ob
 C:\Users\Alexander\Documents\GitHub\TelerikDBTeam\ItShop\ItShop.ConsoleClient\obj\Debug\ItShop.ConsoleClient.exe
 C:\Users\Alexander\Documents\GitHub\TelerikDBTeam\ItShop\ItShop.ConsoleClient\obj\Debug\ItShop.ConsoleClient.pdb
 C:\Users\Alexander\Documents\GitHub\TelerikDBTeam\ItShop\ItShop.Data\bin\Debug\ItShop.ConsoleClient.exe.config
+D:\TELERIK\Databases\Teamwork\sasho\TelerikDBTeam\ItShop\ItShop.ConsoleClient\bin\Debug\ItShop.ConsoleClient.exe.config
+D:\TELERIK\Databases\Teamwork\sasho\TelerikDBTeam\ItShop\ItShop.ConsoleClient\obj\Debug\ItShop.ConsoleClient.exe
+D:\TELERIK\Databases\Teamwork\sasho\TelerikDBTeam\ItShop\ItShop.ConsoleClient\obj\Debug\ItShop.ConsoleClient.pdb
