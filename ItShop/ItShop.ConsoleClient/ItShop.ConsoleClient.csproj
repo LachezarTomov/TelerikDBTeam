@@ -11,6 +11,8 @@
     <AssemblyName>ItShop.ConsoleClient</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -72,10 +74,6 @@
       <Project>{704bf6a3-dae3-44e9-86c5-eaef08482cec}</Project>
       <Name>ExcelManager</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ItShop.Data.MySQL\ItShop.Data.MySQL.csproj">
-      <Project>{6f9c2621-695c-4bde-881b-157dcaa75c07}</Project>
-      <Name>ItShop.Data.MySQL</Name>
-    </ProjectReference>
     <ProjectReference Include="..\ItShop.Data\ItShop.Data.csproj">
       <Project>{ae066734-8594-4678-b0f9-3d087ec42bcb}</Project>
       <Name>ItShop.Data</Name>
@@ -98,6 +96,13 @@
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
