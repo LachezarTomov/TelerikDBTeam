@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="_ConvertModelWizard_Files\UpgradeReferences.xslt"?>
+<UpgradeLog>
+  <Events>
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.Model\ItShop.Model.csproj" Message="Assembly References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.Model\ItShop.Model.csproj" Message="Project References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.Model\ItShop.Model.csproj" Message="Import Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.Model\App.config" Message="Assembly References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.Model\App.config" Message="Http Handlers" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.Model\App.config" Message="Handlers (IIS7+)" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.Model\App.config" Message="Config Sections" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.Model\App.config" Message="Render Extensions" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.Model\App.config" Message="App.config" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.Model\packages.config" Message="Assembly References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.Model\packages.config" Message="Http Handlers" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.Model\packages.config" Message="Handlers (IIS7+)" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.Model\packages.config" Message="Config Sections" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.Model\packages.config" Message="Render Extensions" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.Model\packages.config" Message="packages.config" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.Model\ItShop.Model.csproj" Message="ItShop.Model" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.Data\ItShop.Data.csproj" Message="Assembly References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.Data\ItShop.Data.csproj" Message="Project References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.Data\ItShop.Data.csproj" Message="Import Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.Data\App.config" Message="Assembly References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.Data\App.config" Message="Http Handlers" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.Data\App.config" Message="Handlers (IIS7+)" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.Data\App.config" Message="Config Sections" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.Data\App.config" Message="Render Extensions" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.Data\App.config" Message="App.config" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.Data\packages.config" Message="Assembly References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.Data\packages.config" Message="Http Handlers" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.Data\packages.config" Message="Handlers (IIS7+)" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.Data\packages.config" Message="Config Sections" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.Data\packages.config" Message="Render Extensions" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.Data\packages.config" Message="packages.config" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.Data\ItShop.Data.csproj" Message="ItShop.Data" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.ConsoleClient\ItShop.ConsoleClient.csproj" Message="Assembly References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.ConsoleClient\ItShop.ConsoleClient.csproj" Message="Project References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.ConsoleClient\ItShop.ConsoleClient.csproj" Message="Import Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.ConsoleClient\App.config" Message="Assembly References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.ConsoleClient\App.config" Message="Http Handlers" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.ConsoleClient\App.config" Message="Handlers (IIS7+)" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.ConsoleClient\App.config" Message="Config Sections" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.ConsoleClient\App.config" Message="Render Extensions" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.ConsoleClient\App.config" Message="App.config" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.ConsoleClient\packages.config" Message="Assembly References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.ConsoleClient\packages.config" Message="Http Handlers" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.ConsoleClient\packages.config" Message="Handlers (IIS7+)" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.ConsoleClient\packages.config" Message="Config Sections" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.ConsoleClient\packages.config" Message="Render Extensions" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.ConsoleClient\packages.config" Message="packages.config" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.ConsoleClient\ItShop.ConsoleClient.csproj" Message="ItShop.ConsoleClient" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\MongoDB.Model\MongoDB.Model.csproj" Message="Assembly References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\MongoDB.Model\MongoDB.Model.csproj" Message="Project References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\MongoDB.Model\MongoDB.Model.csproj" Message="Import Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\MongoDB.Model\packages.config" Message="Assembly References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\MongoDB.Model\packages.config" Message="Http Handlers" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\MongoDB.Model\packages.config" Message="Handlers (IIS7+)" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\MongoDB.Model\packages.config" Message="Config Sections" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\MongoDB.Model\packages.config" Message="Render Extensions" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\MongoDB.Model\packages.config" Message="packages.config" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\MongoDB.Model\MongoDB.Model.csproj" Message="MongoDB.Model" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ExcelManager\ExcelManager.csproj" Message="Assembly References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ExcelManager\ExcelManager.csproj" Message="Project References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ExcelManager\ExcelManager.csproj" Message="Import Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ExcelManager\App.config" Message="Assembly References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ExcelManager\App.config" Message="Http Handlers" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ExcelManager\App.config" Message="Handlers (IIS7+)" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ExcelManager\App.config" Message="Config Sections" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ExcelManager\App.config" Message="Render Extensions" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ExcelManager\App.config" Message="App.config" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ExcelManager\packages.config" Message="Assembly References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ExcelManager\packages.config" Message="Http Handlers" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ExcelManager\packages.config" Message="Handlers (IIS7+)" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ExcelManager\packages.config" Message="Config Sections" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ExcelManager\packages.config" Message="Render Extensions" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ExcelManager\packages.config" Message="packages.config" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ExcelManager\ExcelManager.csproj" Message="ExcelManager" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\MongoDB.Data\MongoDB.Data.csproj" Message="Assembly References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\MongoDB.Data\MongoDB.Data.csproj" Message="Project References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\MongoDB.Data\MongoDB.Data.csproj" Message="Import Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\MongoDB.Data\App.config" Message="Assembly References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\MongoDB.Data\App.config" Message="Http Handlers" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\MongoDB.Data\App.config" Message="Handlers (IIS7+)" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\MongoDB.Data\App.config" Message="Config Sections" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\MongoDB.Data\App.config" Message="Render Extensions" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\MongoDB.Data\App.config" Message="App.config" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\MongoDB.Data\packages.config" Message="Assembly References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\MongoDB.Data\packages.config" Message="Http Handlers" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\MongoDB.Data\packages.config" Message="Handlers (IIS7+)" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\MongoDB.Data\packages.config" Message="Config Sections" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\MongoDB.Data\packages.config" Message="Render Extensions" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\MongoDB.Data\packages.config" Message="packages.config" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\MongoDB.Data\MongoDB.Data.csproj" Message="MongoDB.Data" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\XMLManager\XMLManager.csproj" Message="Assembly References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\XMLManager\XMLManager.csproj" Message="Project References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\XMLManager\XMLManager.csproj" Message="Import Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\XMLManager\App.config" Message="Assembly References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\XMLManager\App.config" Message="Http Handlers" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\XMLManager\App.config" Message="Handlers (IIS7+)" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\XMLManager\App.config" Message="Config Sections" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\XMLManager\App.config" Message="Render Extensions" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\XMLManager\App.config" Message="App.config" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\XMLManager\packages.config" Message="Assembly References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\XMLManager\packages.config" Message="Http Handlers" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\XMLManager\packages.config" Message="Handlers (IIS7+)" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\XMLManager\packages.config" Message="Config Sections" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\XMLManager\packages.config" Message="Render Extensions" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\XMLManager\packages.config" Message="packages.config" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\XMLManager\XMLManager.csproj" Message="XMLManager" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ZipFileManager\ZipFileManager.csproj" Message="Assembly References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ZipFileManager\ZipFileManager.csproj" Message="Project References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ZipFileManager\ZipFileManager.csproj" Message="Import Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ZipFileManager\App.config" Message="Assembly References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ZipFileManager\App.config" Message="Http Handlers" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ZipFileManager\App.config" Message="Handlers (IIS7+)" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ZipFileManager\App.config" Message="Config Sections" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ZipFileManager\App.config" Message="Render Extensions" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ZipFileManager\App.config" Message="App.config" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ZipFileManager\packages.config" Message="Assembly References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ZipFileManager\packages.config" Message="Http Handlers" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ZipFileManager\packages.config" Message="Handlers (IIS7+)" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ZipFileManager\packages.config" Message="Config Sections" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ZipFileManager\packages.config" Message="Render Extensions" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ZipFileManager\packages.config" Message="packages.config" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ZipFileManager\ZipFileManager.csproj" Message="ZipFileManager" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.Data.MySQL\ItShop.Data.MySQL.csproj" Message="Assembly References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.Data.MySQL\ItShop.Data.MySQL.csproj" Message="Project References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.Data.MySQL\ItShop.Data.MySQL.csproj" Message="Import Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.Data.MySQL\App.config" Message="Assembly References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.Data.MySQL\App.config" Message="Http Handlers" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.Data.MySQL\App.config" Message="Handlers (IIS7+)" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.Data.MySQL\App.config" Message="Config Sections" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.Data.MySQL\App.config" Message="Render Extensions" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.Data.MySQL\App.config" Message="App.config" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.Data.MySQL\ItShop.Data.MySQL.csproj" Message="ItShop.Data.MySQL" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.sln" Message="ItShop" />
+  </Events>
+</UpgradeLog>

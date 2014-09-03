@@ -13,40 +13,45 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Data.Common;
 using System.Collections.Generic;
-using ItShop.Data.MySql;
 using Telerik.OpenAccess;
 using Telerik.OpenAccess.Metadata;
 using Telerik.OpenAccess.Data.Common;
 using Telerik.OpenAccess.Metadata.Fluent;
 using Telerik.OpenAccess.Metadata.Fluent.Advanced;
 using Telerik.OpenAccess.Metadata.Relational;
+using ItShop.Model;
 
-namespace ItShop.Data.MySql
+namespace ItShop.Data.MySQL
 {
-	public partial class MySqlMetadataSource : FluentMetadataSource
+
+	public partial class ItShopMetadataSource : FluentMetadataSource
 	{
 		
 		protected override IList<MappingConfiguration> PrepareMapping()
 		{
 			List<MappingConfiguration> mappingConfigurations = new List<MappingConfiguration>();
 
-            var customerMapping = new MappingConfiguration<EntityForTest>();
-            customerMapping.MapType(customer => new
+            var productMapping = new MappingConfiguration<Product>();
+            productMapping.MapType(product => new
             {
-                boolProp = customer.BoolProperty,
-                stringProp = customer.StringProperty
+                ProductId = product.ProductId,
+                ProductName = product.ProductName,
+                BuyingPrice = product.BuyingPrice,
+                BasePrice = product.BasePrice,
+                ManufacturerId = product.ManufacturerId,
+                CategoryId = product.CategoryId
             }).ToTable("EntityTest");
-            customerMapping.HasProperty(c => c.StringProperty).IsIdentity();
+            productMapping.HasProperty(p => p.ProductId).IsIdentity();
 
-            mappingConfigurations.Add(customerMapping);
+            mappingConfigurations.Add(productMapping);
 
 			return mappingConfigurations;
 		}
 		
 		protected override void SetContainerSettings(MetadataContainer container)
 		{
-			container.Name = "MySql";
-            container.DefaultNamespace = "ItShop.Data.MySql";
+			container.Name = "ItShop";
+			container.DefaultNamespace = "ItShop.Data.MySQL";
 			container.NameGenerator.SourceStrategy = Telerik.OpenAccess.Metadata.NamingSourceStrategy.Property;
 			container.NameGenerator.RemoveCamelCase = false;
 		}

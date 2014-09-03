@@ -1,11 +1,3 @@
-C:\Users\milan\Documents\TelerikDBTeam\ItShop\ExcelManager\obj\Debug\ExcelManager.csprojResolveAssemblyReference.cache
-C:\Users\milan\Documents\TelerikDBTeam\ItShop\ExcelManager\bin\Debug\ExcelManager.dll.config
-C:\Users\milan\Documents\TelerikDBTeam\ItShop\ExcelManager\bin\Debug\ExcelManager.dll
-C:\Users\milan\Documents\TelerikDBTeam\ItShop\ExcelManager\bin\Debug\ExcelManager.pdb
-C:\Users\milan\Documents\TelerikDBTeam\ItShop\ExcelManager\obj\Debug\ExcelManager.dll
-C:\Users\milan\Documents\TelerikDBTeam\ItShop\ExcelManager\obj\Debug\ExcelManager.pdb
-C:\Users\milan\Documents\TelerikDBTeam\ItShop\ExcelManager\bin\Debug\EPPlus.dll
-C:\Users\milan\Documents\TelerikDBTeam\ItShop\ExcelManager\bin\Debug\EPPlus.xml
 D:\TELERIK\Databases\Teamwork\sasho\TelerikDBTeam\ItShop\ExcelManager\bin\Debug\ExcelManager.dll.config
 D:\TELERIK\Databases\Teamwork\sasho\TelerikDBTeam\ItShop\ExcelManager\bin\Debug\ExcelManager.dll
 D:\TELERIK\Databases\Teamwork\sasho\TelerikDBTeam\ItShop\ExcelManager\bin\Debug\ExcelManager.pdb
@@ -22,3 +14,10 @@ C:\Users\Dobri\Desktop\GitProjects\TelerikDBTeam\ItShop\ExcelManager\bin\Debug\E
 C:\Users\Dobri\Desktop\GitProjects\TelerikDBTeam\ItShop\ExcelManager\bin\Debug\EPPlus.xml
 C:\Users\Dobri\Desktop\GitProjects\TelerikDBTeam\ItShop\ExcelManager\obj\Debug\ExcelManager.dll
 C:\Users\Dobri\Desktop\GitProjects\TelerikDBTeam\ItShop\ExcelManager\obj\Debug\ExcelManager.pdb
+C:\Users\milan\Documents\TelerikDBTeam\ItShop\ExcelManager\bin\Debug\ExcelManager.dll.config
+C:\Users\milan\Documents\TelerikDBTeam\ItShop\ExcelManager\bin\Debug\ExcelManager.dll
+C:\Users\milan\Documents\TelerikDBTeam\ItShop\ExcelManager\bin\Debug\ExcelManager.pdb
+C:\Users\milan\Documents\TelerikDBTeam\ItShop\ExcelManager\bin\Debug\EPPlus.dll
+C:\Users\milan\Documents\TelerikDBTeam\ItShop\ExcelManager\bin\Debug\EPPlus.xml
+C:\Users\milan\Documents\TelerikDBTeam\ItShop\ExcelManager\obj\Debug\ExcelManager.dll
+C:\Users\milan\Documents\TelerikDBTeam\ItShop\ExcelManager\obj\Debug\ExcelManager.pdb

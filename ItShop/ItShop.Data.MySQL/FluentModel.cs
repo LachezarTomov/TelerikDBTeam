@@ -13,40 +13,39 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Data.Common;
 using System.Collections.Generic;
-using ItShop.Data.MySql;
 using Telerik.OpenAccess;
 using Telerik.OpenAccess.Metadata;
 using Telerik.OpenAccess.Data.Common;
 using Telerik.OpenAccess.Metadata.Fluent;
 using Telerik.OpenAccess.Metadata.Fluent.Advanced;
 
-namespace ItShop.Data.MySql	
+namespace ItShop.Data.MySQL	
 {
-	public partial class FluentModel : OpenAccessContext, IMySqlUnitOfWork
+	public partial class ItShop : OpenAccessContext, IItShopUnitOfWork
 	{
         private static string connectionStringName = @"ItShopMySql";
 			
 		private static BackendConfiguration backend = GetBackendConfiguration();
 				
-		private static MetadataSource metadataSource = new MySqlMetadataSource();
+		private static MetadataSource metadataSource = new ItShopMetadataSource();
 		
-		public FluentModel()
+		public ItShop()
 			:base(connectionStringName, backend, metadataSource)
 		{ }
 		
-		public FluentModel(string connection)
+		public ItShop(string connection)
 			:base(connection, backend, metadataSource)
 		{ }
 		
-		public FluentModel(BackendConfiguration backendConfiguration)
+		public ItShop(BackendConfiguration backendConfiguration)
 			:base(connectionStringName, backendConfiguration, metadataSource)
 		{ }
 			
-		public FluentModel(string connection, MetadataSource metadataSource)
+		public ItShop(string connection, MetadataSource metadataSource)
 			:base(connection, backend, metadataSource)
 		{ }
 		
-		public FluentModel(string connection, BackendConfiguration backendConfiguration, MetadataSource metadataSource)
+		public ItShop(string connection, BackendConfiguration backendConfiguration, MetadataSource metadataSource)
 			:base(connection, backendConfiguration, metadataSource)
 		{ }
 			
@@ -62,14 +61,14 @@ namespace ItShop.Data.MySql
 		}
 		
 		/// <summary>
-		/// Allows you to customize the BackendConfiguration of MySql.
+		/// Allows you to customize the BackendConfiguration of ItShop.
 		/// </summary>
-		/// <param name="config">The BackendConfiguration of MySql.</param>
+		/// <param name="config">The BackendConfiguration of ItShop.</param>
 		static partial void CustomizeBackendConfiguration(ref BackendConfiguration config);
 		
 	}
 	
-	public interface IMySqlUnitOfWork : IUnitOfWork
+	public interface IItShopUnitOfWork : IUnitOfWork
 	{
 	}
 }

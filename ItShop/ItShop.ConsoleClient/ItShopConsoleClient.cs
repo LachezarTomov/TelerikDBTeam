@@ -9,7 +9,7 @@ using MongoDB.Bson;
 using ItShop.Data;
 using ItShop.Model;
 using ItShop.Data.Migrations;
-using ItShop.Data.MySql;
+using ItShop.Data.MySQL;
 using ExcelManager;
 using XMLManager;
 using ZipFileManager;
@@ -65,9 +65,9 @@ namespace ItShop.ConsoleClient
             
             // Load data XML data in MSSQL
             IList<Store> expensesList = xmlReader.LoadStoreReportsFromXml("expenses.xml");
-            SaveExpensesReportsInMSSQL(expensesList, db);
+            //SaveExpensesReportsInMSSQL(expensesList, db);
 
-            FillStoresExpensesInMongoDB(expensesList);
+           // FillStoresExpensesInMongoDB(expensesList);
         }
 
         private static void SaveExpensesReportsInMSSQL(IList<Store> storesList, ItShopDbContext db)

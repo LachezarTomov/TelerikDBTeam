@@ -19,7 +19,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XMLManager", "XMLManager\XM
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZipFileManager", "ZipFileManager\ZipFileManager.csproj", "{7C367E4B-A924-46F8-8095-9FA8EFE5FCE3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ItShop.Data.MySql", "ItShop.Data.MySQL\ItShop.Data.MySql.csproj", "{6F9C2621-695C-4BDE-881B-157DCAA75C07}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ItShop.Data.MySQL", "ItShop.Data.MySQL\ItShop.Data.MySQL.csproj", "{6F9C2621-695C-4BDE-881B-157DCAA75C07}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
