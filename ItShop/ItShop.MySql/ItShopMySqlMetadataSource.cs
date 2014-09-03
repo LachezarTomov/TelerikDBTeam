@@ -30,17 +30,18 @@ namespace ItShop.MySql
 		{
 			List<MappingConfiguration> mappingConfigurations = new List<MappingConfiguration>();
            
-            var productMapping = new MappingConfiguration<ProductMySql>();
-            productMapping.MapType(product => new
+            var productMapping = new MappingConfiguration<ProductReport>();
+            
+            productMapping.MapType(productReport => new
             {
-                ProductId = product.ProductID,
-                ProductName = product.ProductName,
-                BuyingPrice = product.BuyingPrice,
-                BasePrice = product.BasePrice,
-                ManufacturerId = product.ManufacturerId,
-                CategoryId = product.CategoryId
-            }).ToTable("EntityTest");
-            productMapping.HasProperty(p => p.ProductID).IsIdentity();
+                ProductReportId = productReport.ProductReportID,
+                ProductName = productReport.ProductName,
+                CategoryName = productReport.CategoryName,
+                ReportStartDate = productReport.ReportStartDate,
+                ReportEndDate = productReport.ReportEndDate,
+                TotalQuantitySold = productReport.TotalQuantitySold
+            }).ToTable("ProductReports");
+            productMapping.HasProperty(p => p.ProductReportID).IsIdentity();
 
             mappingConfigurations.Add(productMapping);
 			return mappingConfigurations;

@@ -60,11 +60,11 @@ namespace ItShop.MySql
 			return backend;
 		}
 
-        public IQueryable<ProductMySql> Products
+        public IQueryable<ProductReport> Products
         {
             get
             {
-                return this.GetAll<ProductMySql>();
+                return this.GetAll<ProductReport>();
             }
         }
 
