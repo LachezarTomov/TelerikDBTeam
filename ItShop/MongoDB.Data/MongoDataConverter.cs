@@ -13,9 +13,9 @@
             var reader = new MongoDataReader();
             using (db)
             {
-                ConvertManufacturersData(db, reader);
-                //ConvertProductsData(db,reader);
-                //ConvertStoresData(db,reader);
+                //ConvertManufacturersData(db, reader);
+                //ConvertStoresData(db, reader);
+                ConvertProductsData(db,reader);               
                 //ConvertSalesData(db,reader);
             }
         }
@@ -27,9 +27,7 @@
             foreach (var currManufacturer in manufacturers)
             {
                 //to check query
-                var sqlCurrentManufacturer = db.Manufacturers.Where(m => m.ManufacturerName == currManufacturer.ManufacturerName
-                    && m.Description == currManufacturer.Description
-                    && m.CEO == currManufacturer.CEO).FirstOrDefault();
+                var sqlCurrentManufacturer = db.Manufacturers.Where(m => m.ManufacturerName == currManufacturer.ManufacturerName).FirstOrDefault();
 
                 if (sqlCurrentManufacturer == null)
                 {
@@ -50,29 +48,40 @@
             foreach (var currProduct in products)
             {
                 //to check query
-                var sqlCurrentProduct = db.Products.Where(p => p.ProductName == currProduct.ProductName);
+                var sqlCurrentProduct = db.Products.Where(p => p.ProductName == currProduct.ProductName).FirstOrDefault();
 
                 if (sqlCurrentProduct == null)
                 {
                     var newProduct = new ItShop.Model.Product();
                     newProduct.ProductName = currProduct.ProductName;
                     newProduct.BasePrice = currProduct.Price;
-                    //TODO: need help with query in ifs!!!
-                    //db.Categories.Where(c => c.CategoryName == currProduct.Category).First()); 
-                    if (true)
+                    var categoryID = db.Categories.Where(c => c.CategoryName == currProduct.Category).Select(x => x.CategoryID).FirstOrDefault();
+                    if (categoryID == 0)
                     {
                         var newCategory = new ItShop.Model.Category();
                         newCategory.CategoryName = currProduct.Category;
+                        newProduct.Category = newCategory;
                     }
-                    if (true)
+                    else
+                    {
+                        newProduct.Category.CategoryID = categoryID;
+                    }
+                    var manufacturerId = db.Manufacturers.Where(c => c.ManufacturerName == currProduct.Manufacturer).Select(x => x.ManufacturerID).FirstOrDefault();
+
+                    if (manufacturerId == 0)
                     {
                         var newManufacturer = new ItShop.Model.Manufacturer();
                         newManufacturer.ManufacturerName = currProduct.Manufacturer;
+                        newProduct.Manufacturer = newManufacturer;
                     }
-                    newProduct.Category.CategoryName = currProduct.Category;
-                    newProduct.Manufacturer.ManufacturerName = currProduct.Manufacturer;
+                    else
+                    {
+                        newProduct.ManufacturerId = manufacturerId;
+                    }
+
                     db.Products.Add(newProduct);
                 }
+
             }
             db.SaveChanges();
         }
@@ -83,24 +92,41 @@
 
             foreach (var currStore in stores)
             {
-                //to check query
-                var sqlCurrentStore = db.Stores.Where(p => p.StoreName == currStore.StoreName);
-
+                var sqlCurrentStore = db.Stores.Where(p => p.StoreName == currStore.StoreName).FirstOrDefault();
                 if (sqlCurrentStore == null)
                 {
                     var newStore = new ItShop.Model.Store();
                     newStore.StoreName = currStore.StoreName;
-                    //TODO: need help with query in ifs!!!
-                    if (true)
+                    var addressId = db.Addresses.Where(a => a.AddressName == currStore.Address).Select(x => x.AddressId).FirstOrDefault();
+                    if (addressId == 0)
                     {
                         var newAddress = new ItShop.Model.Address();
                         newAddress.AddressName = currStore.Address;
+                        newStore.Address = newAddress;
+
+                        var townId = db.Towns.Where(a => a.TownName == currStore.Town).Select(x => x.TownId).FirstOrDefault();
+                        //System.Console.WriteLine(townId.);
+                        if (townId == 0)
+                        {
+                            var newTown = new ItShop.Model.Town();
+                            newTown.TownName = currStore.Town;
+                            newStore.Address.Town = newTown;
+                        }
+                        else
+                        {
+                            newStore.Address.TownId = townId;
+                        }
                     }
-                    newStore.Address.AddressName = currStore.Address;
+                    else
+                    {
+                        newStore.AddressId = addressId;
+                    }
+
                     db.Stores.Add(newStore);
                 }
+                db.SaveChanges();
             }
-            db.SaveChanges();
+            
         }
         private static void ConvertSalesData(ItShopDbContext db, MongoDataReader reader)
         {

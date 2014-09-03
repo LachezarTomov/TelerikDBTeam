@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Data.Entity.Validation;
@@ -9,8 +9,7 @@ using MongoDB.Bson;
 using ItShop.Data;
 using ItShop.Model;
 using ItShop.Data.Migrations;
-//using ItShop.Data.MySQL; 
-using ItShop.MySql;
+using ItShop.Data.MySql;
 using ExcelManager;
 using XMLManager;
 using ZipFileManager;
@@ -19,33 +18,31 @@ namespace ItShop.ConsoleClient
 {
     public class ItShopConsoleClient
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            Database.SetInitializer(
-                new MigrateDatabaseToLatestVersion<ItShopDbContext, Configuration>());
+         //Database.SetInitializer( new MigrateDatabaseToLatestVersion<ItShopDbContext, Configuration>());
 
             var db = new ItShopDbContext();
 
-
-
+            Console.WriteLine(db.Products.Any()); 
             //FillData();
             /* 
              * TEST MILAN
              */
 
-            MySqlManager.UpdateDatabase();
-            //         ExcelManager.ExcelReader.ReadFromExcel2003File();
-            //         ExcelWriter.CreateExcel2007PlusFile();
+            MysqlManager.UpdateDatabase();
+   //         ExcelManager.ExcelReader.ReadFromExcel2003File();
+   //         ExcelWriter.CreateExcel2007PlusFile();
             /*
              * END OF TESTS
-             */
+             */ 
             //DateTime fromDate = new DateTime(2014, 8, 30, 0, 0, 0);
             //DateTime toDate = new DateTime(2014, 9, 30, 23, 59, 59);
 
             //XMLWriter xmlWriter = new XMLWriter();
             //xmlWriter.SaveSalesReportToXML(fromDate, toDate, "report.xml");
 
-            //ZipExcelParser parserFromExcel = new ZipExcelParser(db);
+           // ZipExcelParser parserFromExcel = new ZipExcelParser(db);
             //IList<Sale> sales = parserFromExcel.LoadData();// to load data to the server tomorrow
 
             //foreach (var sale in sales)
@@ -59,22 +56,22 @@ namespace ItShop.ConsoleClient
             //        Console.Write("Quantity: " + saleDetail.Quantity + " ");
             //        Console.WriteLine();
             //    }
+
             //}
 
-            // Load XML File to save in MSSQL DB
-            XMLReader xmlReader = new XMLReader();
-
-            // Load data XML data in MSSQL
-            IList<Store> expensesList = xmlReader.LoadStoreReportsFromXml("expenses.xml");
-            //SaveExpensesReportsInMSSQL(expensesList, db);
-
-            // FillStoresExpensesInMongoDB(expensesList);
+           // // Load XML File to save in MSSQL DB
+           // XMLReader xmlReader = new XMLReader();
+            
+           // // Load data XML data in MSSQL
+           // IList<Store> expensesList = xmlReader.LoadStoreReportsFromXml("expenses.xml");
+           //// SaveExpensesReportsInMSSQL(expensesList);
+          
         }
 
-        private static void SaveExpensesReportsInMSSQL(IList<Store> storesList, ItShopDbContext db)
+        private static void SaveExpensesReportsInMSSQL(IList<Store> storesList)
         {
-            // var db = new ItShopDbContext();
-            // using (db)
+            var db = new ItShopDbContext();
+            using (db)
             {
                 foreach (var store in storesList)
                 {
@@ -95,21 +92,26 @@ namespace ItShop.ConsoleClient
             }
         }
 
-        private static void FillStoresExpensesInMongoDB(IList<Store> stores)
+        private void FillStoresExpensesInMongoDB(IList<StoresExpenses> expensesList)
         {
             MongoClient client = new MongoClient(); // connect to localhost
             MongoServer server = client.GetServer();
-            MongoDatabase db = server.GetDatabase("ItShop");
+            MongoDatabase db = server.GetDatabase("StoreExpensesReports");
 
             MongoCollection<BsonDocument> expensesReports = db.GetCollection<BsonDocument>("ExpensesReports");
 
-            foreach (var store in stores)
+            foreach (var expense in expensesList)
             {
-                expensesReports.Insert(store);
+                BsonDocument document = new BsonDocument {
+                    { "StoreId", expense.StoreId },
+                    { "ForDate", expense.ForDate },
+                    { "Amount", expense.Amount.ToString() }
+                };
+
+                expensesReports.Insert(document);
             }
+            
         }
-
-
 
         private static void FillData()
         {
