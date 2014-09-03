@@ -19,6 +19,15 @@ namespace ItShop.Data
                     new MigrateDatabaseToLatestVersion<ItShopDbContext, Configuration>());
 
         }
+
+        public IDbSet<Town> Towns { get; set; }
+
+        public IDbSet<Manufacturer> Manufacturers { get; set; }
+
+        public IDbSet<Category> Categories { get; set; }
+
+        public IDbSet<Address> Addresses { get; set; }
+
         public IDbSet<Product> Products { get; set; }
 
         public IDbSet<Store> Stores { get; set; }

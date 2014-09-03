@@ -6,19 +6,16 @@
     using System.IO;
     using System.IO.Compression;
     using System.Data;
-    using System.Data.OleDb;
 
     using ItShop.Model;
     using ItShop.Data;
-    using System.Data.Entity;
-    using ItShop.Data.Migrations;
     using ExcelManager;
 
     public class ZipExcelParser
     {
         private string DIRECTORY_ROOT = @"..\..\..\InputDataFiles";  
         private const string FilePattern = "*.xls*";
-
+       
         public ZipExcelParser(ItShopDbContext db)
         {
             this.DataBase = db;
@@ -40,7 +37,7 @@
                 sales.Add(sale);
             }
 
-            this.DeleteFile();
+            this.DeleteUnzippedFile();
             return sales;
         }
 
@@ -55,9 +52,8 @@
         private Sale CreateSaleObjectFromDataTable(DataTable table, string dirNameDate)
         {
             string shopName = table.Columns[0].ColumnName.TrimStart().TrimEnd().Replace('#', '.');
-
             int findStoreWithMatchingTableName = this.DataBase.Stores.First(st => st.StoreName.Equals(shopName)).StoreId;
-
+            
             var currentSale = new Sale
             {
                 SaleDate = Convert.ToDateTime(dirNameDate),
@@ -89,7 +85,7 @@
             ZipFile.ExtractToDirectory(DIRECTORY_ROOT + "\\Sale-Reports.zip", DIRECTORY_ROOT);
         }
 
-        private void DeleteFile()
+        private void DeleteUnzippedFile()
         {
             Directory.Delete(DIRECTORY_ROOT + "\\Sale-Reports", true);
         }
