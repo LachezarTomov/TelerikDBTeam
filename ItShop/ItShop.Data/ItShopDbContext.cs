@@ -19,20 +19,22 @@ namespace ItShop.Data
 
         }
 
-       //protected override void OnModelCreating(DbModelBuilder modelBuilder)
-       //{
-       //    modelBuilder.Entity<ProductsInStock>()
-       //        .HasRequired(p => p.ProductId)
-       //        .WithRequiredDependent(c => c.
-       //        .HasMany(p => p.ProductId)
-       //        .WithMany(t => t.Posts)
-       //        .Map(mc =>
-       //        {
-       //            mc.ToTable("PostJoinTag");
-       //            mc.MapLeftKey("PostId");
-       //            mc.MapRightKey("TagId");
-       //        });
-       //}
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+
+           //modelBuilder.Entity<ProductsInStock>()
+           //     .HasKey(ps => new { ps.ProductId, ps.StoreId });
+
+            modelBuilder.Entity<Store>()
+                .HasMany(s => s.ProductsInStock)
+                .WithRequired()
+                .HasForeignKey(s => s.StoreId);
+
+            modelBuilder.Entity<Product>()
+              .HasMany(p => p.ProductsInStocks)
+              .WithRequired()
+              .HasForeignKey(p => p.ProductId);
+        }
 
         public IDbSet<Town> Towns { get; set; }
 

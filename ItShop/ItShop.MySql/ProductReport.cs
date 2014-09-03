@@ -12,6 +12,8 @@ namespace ItShop.MySql
 
         public string ProductName { get; set; }
 
+        public decimal BuyingPrice { get; set; }
+
         public string CategoryName { get; set; }
 
         public DateTime ReportStartDate { get; set; }

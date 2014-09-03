@@ -22,7 +22,8 @@
 
         public Address Address { get; set; }
 
-    //    public virtual ProductsInStock ProductsInStock { get; set; }
+        public virtual ICollection<ProductsInStock> ProductsInStock { get; set; }
+        
         public virtual ICollection<Sale> Sales
         {
             get

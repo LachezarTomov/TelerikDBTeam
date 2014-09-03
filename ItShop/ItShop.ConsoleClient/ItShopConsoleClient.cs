@@ -23,16 +23,18 @@ namespace ItShop.ConsoleClient
          //Database.SetInitializer( new MigrateDatabaseToLatestVersion<ItShopDbContext, Configuration>());
 
             var db = new ItShopDbContext();
-
-            Console.WriteLine(db.Products.Any()); 
+            
+            //Console.WriteLine(db.Products.Any()); 
             //FillData();
             /* 
              * TEST MILAN
              */
 
             MySqlManager.UpdateDatabase();
+            MySqlManager.InsertIntoMySql("test.txt");
+
    //         ExcelManager.ExcelReader.ReadFromExcel2003File();
-   //         ExcelWriter.CreateExcel2007PlusFile();
+            ExcelWriter.CreateExcel2007PlusFile();
             /*
              * END OF TESTS
              */ 

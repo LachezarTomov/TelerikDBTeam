@@ -10,14 +10,11 @@ namespace ItShop.Model
 {
     public class ProductsInStock
     {
-        public int ProductsInStockId { get; set; }
-
+        [Key, Column(Order = 0)]
         public int ProductId { get; set; }
-       // public virtual Product Product { get; set; }
-
-
+       
+        [Key, Column(Order = 1)]
         public int StoreId { get; set; }
-       // public virtual Store Store { get; set; }
 
         public int QuantityInStock { get; set; }
 

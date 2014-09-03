@@ -1,0 +1,2 @@
+﻿{"ProductName":"Dell Inspiron 3537","Category":"laptop","AmountSold":3,"ByingPrice":899.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"Toshiba Satellite L50-B-16C","Category":"laptop","AmountSold":3,"ByingPrice":1369.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}

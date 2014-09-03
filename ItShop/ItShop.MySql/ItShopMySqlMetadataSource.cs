@@ -37,11 +37,12 @@ namespace ItShop.MySql
                 ProductReportId = productReport.ProductReportID,
                 ProductName = productReport.ProductName,
                 CategoryName = productReport.CategoryName,
+                BuyingPrice = productReport.BuyingPrice,
                 ReportStartDate = productReport.ReportStartDate,
                 ReportEndDate = productReport.ReportEndDate,
                 TotalQuantitySold = productReport.TotalQuantitySold
             }).ToTable("ProductReports");
-            productMapping.HasProperty(p => p.ProductReportID).IsIdentity();
+            productMapping.HasProperty(p => p.ProductReportID).IsIdentity(KeyGenerator.Autoinc);
 
             mappingConfigurations.Add(productMapping);
 			return mappingConfigurations;

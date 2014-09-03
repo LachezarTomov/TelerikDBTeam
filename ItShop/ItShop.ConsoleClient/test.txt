@@ -1,0 +1,75 @@
+{"ProductName":"Dell Inspiron 3537","Category":"laptop","AmountSold":3,"ByingPrice":899.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"Toshiba Satellite L50-B-16C","Category":"laptop","AmountSold":3,"ByingPrice":1369.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"ASUS G750JZ-T4039D","Category":"laptop","AmountSold":3,"ByingPrice":2779.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"Acer Аspire ES1-511 L50-B-16C","Category":"laptop","AmountSold":3,"ByingPrice":549.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"Apple MacBook Air","Category":"laptop","AmountSold":3,"ByingPrice":1825.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"Samsung Galaxy Tab 4 10.1 (SM-T535)","Category":"tablet","AmountSold":3,"ByingPrice":689.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"ASUS MeMO Pad 7 (ME176C) 8GB","Category":"tablet","AmountSold":3,"ByingPrice":259.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"Apple iPad Mini Retina Wi-Fi 16GB","Category":"tablet","AmountSold":3,"ByingPrice":699.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"Dell Venue 7","Category":"tablet","AmountSold":3,"ByingPrice":269.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"HP Slate 10 HD 3603eu","Category":"tablet","AmountSold":3,"ByingPrice":399.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"Acer Predator G3-605","Category":"pc","AmountSold":3,"ByingPrice":1599.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"Mac Pro","Category":"pc","AmountSold":3,"ByingPrice":5999.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"ASUS Essentio CG8250","Category":"pc","AmountSold":3,"ByingPrice":1099.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"Dell Alienware X51","Category":"pc","AmountSold":3,"ByingPrice":1699.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"HP ProDesk 600 G1","Category":"pc","AmountSold":3,"ByingPrice":936.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"Dell Inspiron 3537","Category":"laptop","AmountSold":3,"ByingPrice":899.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"Toshiba Satellite L50-B-16C","Category":"laptop","AmountSold":3,"ByingPrice":1369.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"ASUS G750JZ-T4039D","Category":"laptop","AmountSold":3,"ByingPrice":2779.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"Acer Аspire ES1-511 L50-B-16C","Category":"laptop","AmountSold":3,"ByingPrice":549.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"Apple MacBook Air","Category":"laptop","AmountSold":3,"ByingPrice":1825.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"Samsung Galaxy Tab 4 10.1 (SM-T535)","Category":"tablet","AmountSold":3,"ByingPrice":689.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"ASUS MeMO Pad 7 (ME176C) 8GB","Category":"tablet","AmountSold":3,"ByingPrice":259.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"Apple iPad Mini Retina Wi-Fi 16GB","Category":"tablet","AmountSold":3,"ByingPrice":699.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"Dell Venue 7","Category":"tablet","AmountSold":3,"ByingPrice":269.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"HP Slate 10 HD 3603eu","Category":"tablet","AmountSold":3,"ByingPrice":399.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"Acer Predator G3-605","Category":"pc","AmountSold":3,"ByingPrice":1599.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"Mac Pro","Category":"pc","AmountSold":3,"ByingPrice":5999.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"ASUS Essentio CG8250","Category":"pc","AmountSold":3,"ByingPrice":1099.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"Dell Alienware X51","Category":"pc","AmountSold":3,"ByingPrice":1699.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"HP ProDesk 600 G1","Category":"pc","AmountSold":3,"ByingPrice":936.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"Dell Inspiron 3537","Category":"laptop","AmountSold":3,"ByingPrice":899.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"Toshiba Satellite L50-B-16C","Category":"laptop","AmountSold":3,"ByingPrice":1369.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"ASUS G750JZ-T4039D","Category":"laptop","AmountSold":3,"ByingPrice":2779.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"Acer Аspire ES1-511 L50-B-16C","Category":"laptop","AmountSold":3,"ByingPrice":549.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"Apple MacBook Air","Category":"laptop","AmountSold":3,"ByingPrice":1825.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"Samsung Galaxy Tab 4 10.1 (SM-T535)","Category":"tablet","AmountSold":3,"ByingPrice":689.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"ASUS MeMO Pad 7 (ME176C) 8GB","Category":"tablet","AmountSold":3,"ByingPrice":259.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"Apple iPad Mini Retina Wi-Fi 16GB","Category":"tablet","AmountSold":3,"ByingPrice":699.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"Dell Venue 7","Category":"tablet","AmountSold":3,"ByingPrice":269.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"HP Slate 10 HD 3603eu","Category":"tablet","AmountSold":3,"ByingPrice":399.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"Acer Predator G3-605","Category":"pc","AmountSold":3,"ByingPrice":1599.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"Mac Pro","Category":"pc","AmountSold":3,"ByingPrice":5999.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"ASUS Essentio CG8250","Category":"pc","AmountSold":3,"ByingPrice":1099.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"Dell Alienware X51","Category":"pc","AmountSold":3,"ByingPrice":1699.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"HP ProDesk 600 G1","Category":"pc","AmountSold":3,"ByingPrice":936.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"Dell Inspiron 3537","Category":"laptop","AmountSold":3,"ByingPrice":899.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"Toshiba Satellite L50-B-16C","Category":"laptop","AmountSold":3,"ByingPrice":1369.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"ASUS G750JZ-T4039D","Category":"laptop","AmountSold":3,"ByingPrice":2779.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"Acer Аspire ES1-511 L50-B-16C","Category":"laptop","AmountSold":3,"ByingPrice":549.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"Apple MacBook Air","Category":"laptop","AmountSold":3,"ByingPrice":1825.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"Samsung Galaxy Tab 4 10.1 (SM-T535)","Category":"tablet","AmountSold":3,"ByingPrice":689.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"ASUS MeMO Pad 7 (ME176C) 8GB","Category":"tablet","AmountSold":3,"ByingPrice":259.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"Apple iPad Mini Retina Wi-Fi 16GB","Category":"tablet","AmountSold":3,"ByingPrice":699.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"Dell Venue 7","Category":"tablet","AmountSold":3,"ByingPrice":269.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"HP Slate 10 HD 3603eu","Category":"tablet","AmountSold":3,"ByingPrice":399.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"Acer Predator G3-605","Category":"pc","AmountSold":3,"ByingPrice":1599.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"Mac Pro","Category":"pc","AmountSold":3,"ByingPrice":5999.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"ASUS Essentio CG8250","Category":"pc","AmountSold":3,"ByingPrice":1099.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"Dell Alienware X51","Category":"pc","AmountSold":3,"ByingPrice":1699.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"HP ProDesk 600 G1","Category":"pc","AmountSold":3,"ByingPrice":936.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"Dell Inspiron 3537","Category":"laptop","AmountSold":3,"ByingPrice":899.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"Toshiba Satellite L50-B-16C","Category":"laptop","AmountSold":3,"ByingPrice":1369.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"ASUS G750JZ-T4039D","Category":"laptop","AmountSold":3,"ByingPrice":2779.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"Acer Аspire ES1-511 L50-B-16C","Category":"laptop","AmountSold":3,"ByingPrice":549.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"Apple MacBook Air","Category":"laptop","AmountSold":3,"ByingPrice":1825.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"Samsung Galaxy Tab 4 10.1 (SM-T535)","Category":"tablet","AmountSold":3,"ByingPrice":689.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"ASUS MeMO Pad 7 (ME176C) 8GB","Category":"tablet","AmountSold":3,"ByingPrice":259.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"Apple iPad Mini Retina Wi-Fi 16GB","Category":"tablet","AmountSold":3,"ByingPrice":699.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"Dell Venue 7","Category":"tablet","AmountSold":3,"ByingPrice":269.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"HP Slate 10 HD 3603eu","Category":"tablet","AmountSold":3,"ByingPrice":399.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"Acer Predator G3-605","Category":"pc","AmountSold":3,"ByingPrice":1599.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"Mac Pro","Category":"pc","AmountSold":3,"ByingPrice":5999.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"ASUS Essentio CG8250","Category":"pc","AmountSold":3,"ByingPrice":1099.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"Dell Alienware X51","Category":"pc","AmountSold":3,"ByingPrice":1699.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
+{"ProductName":"HP ProDesk 600 G1","Category":"pc","AmountSold":3,"ByingPrice":936.00,"StartDate":"2012-12-12T00:00:00","EndDate":"2013-12-12T00:00:00"}
