@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZipFileManager", "ZipFileMa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ItShop.Data.MySQL", "ItShop.Data.MySQL\ItShop.Data.MySQL.csproj", "{6F9C2621-695C-4BDE-881B-157DCAA75C07}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ItShop.MySql", "ItShop.MySql\ItShop.MySql.csproj", "{7A04A6FA-F142-41F1-BEAC-A080CE95DD9F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{6F9C2621-695C-4BDE-881B-157DCAA75C07}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6F9C2621-695C-4BDE-881B-157DCAA75C07}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6F9C2621-695C-4BDE-881B-157DCAA75C07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A04A6FA-F142-41F1-BEAC-A080CE95DD9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A04A6FA-F142-41F1-BEAC-A080CE95DD9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A04A6FA-F142-41F1-BEAC-A080CE95DD9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A04A6FA-F142-41F1-BEAC-A080CE95DD9F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

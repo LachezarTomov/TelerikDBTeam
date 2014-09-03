@@ -62,6 +62,7 @@
     <Compile Include="FluentModel.cs" />
     <Compile Include="ItShopMetadataSource.cs" />
     <Compile Include="MysqlManager.cs" />
+    <Compile Include="ProductMySql.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

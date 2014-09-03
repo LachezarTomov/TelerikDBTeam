@@ -124,16 +124,19 @@
     <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ZipFileManager\packages.config" Message="Render Extensions" />
     <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ZipFileManager\packages.config" Message="packages.config" />
     <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ZipFileManager\ZipFileManager.csproj" Message="ZipFileManager" />
-    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.Data.MySQL\ItShop.Data.MySQL.csproj" Message="Assembly References" />
-    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.Data.MySQL\ItShop.Data.MySQL.csproj" Message="Project References" />
-    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.Data.MySQL\ItShop.Data.MySQL.csproj" Message="Import Directives" />
-    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.Data.MySQL\App.config" Message="Assembly References" />
-    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.Data.MySQL\App.config" Message="Http Handlers" />
-    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.Data.MySQL\App.config" Message="Handlers (IIS7+)" />
-    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.Data.MySQL\App.config" Message="Config Sections" />
-    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.Data.MySQL\App.config" Message="Render Extensions" />
-    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.Data.MySQL\App.config" Message="App.config" />
-    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.Data.MySQL\ItShop.Data.MySQL.csproj" Message="ItShop.Data.MySQL" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.MySql\ItShop.MySql.csproj" Message="Assembly References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.MySql\ItShop.MySql.csproj" Message="Project References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.MySql\ItShop.MySql.csproj" Message="Import Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.MySql\App.config" Message="Assembly References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.MySql\App.config" Message="Http Handlers" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.MySql\App.config" Message="Handlers (IIS7+)" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.MySql\App.config" Message="Config Sections" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.MySql\App.config" Message="Render Extensions" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.MySql\App.config" Message="App.config" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.MySql\ItShop.MySql.csproj" Message="ItShop.MySql" />
     <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.sln" Message="ItShop" />
+    <Event EventType="Success" Action="Upgrade" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.MySql\ItShop.MySql.csproj" Message="Assembly References" />
+    <Event EventType="Success" Action="Upgrade" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.MySql\ItShop.MySql.csproj" Message="ItShop.MySql" />
+    <Event EventType="Success" Action="Upgrade" SourceItem="C:\Users\milan\Documents\TelerikDBTeam\ItShop\ItShop.sln" Message="ItShop" />
   </Events>
 </UpgradeLog>

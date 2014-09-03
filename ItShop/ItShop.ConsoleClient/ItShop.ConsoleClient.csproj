@@ -55,6 +55,8 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="Telerik.OpenAccess, Version=2014.2.711.1, Culture=neutral, PublicKeyToken=7ce17eeaf1d59342, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.OpenAccess.35.Extensions, Version=2014.2.711.1, Culture=neutral, PublicKeyToken=7ce17eeaf1d59342, processorArchitecture=MSIL" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ItShopConsoleClient.cs" />
@@ -83,6 +85,10 @@
     <ProjectReference Include="..\ItShop.Model\ItShop.Model.csproj">
       <Project>{099f93da-123f-490c-a041-82ae961f4318}</Project>
       <Name>ItShop.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ItShop.MySql\ItShop.MySql.csproj">
+      <Project>{7a04a6fa-f142-41f1-beac-a080ce95dd9f}</Project>
+      <Name>ItShop.MySql</Name>
     </ProjectReference>
     <ProjectReference Include="..\XMLManager\XMLManager.csproj">
       <Project>{8baf2cb6-d6a6-4207-a8fe-97fbab730476}</Project>

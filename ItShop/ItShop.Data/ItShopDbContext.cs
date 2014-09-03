@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -37,13 +36,5 @@ namespace ItShop.Data
         public IDbSet<SaleDetail> SaleDetails { get; set; }
 
         public IDbSet<StoresExpenses> StoresExpenses { get; set; }
-
-        public IDbSet<Manufacturer> Manufacturers { get; set; }
-
-        public IDbSet<Town> Towns { get; set; }
-
-        public IDbSet<Address> Addresses { get; set; }
-
-        public IDbSet<Category> Categories { get; set; }
     }
 }

@@ -19,33 +19,33 @@ using Telerik.OpenAccess.Data.Common;
 using Telerik.OpenAccess.Metadata.Fluent;
 using Telerik.OpenAccess.Metadata.Fluent.Advanced;
 
-namespace ItShop.Data.MySQL	
+namespace ItShop.MySql	
 {
-	public partial class ItShop : OpenAccessContext, IItShopUnitOfWork
+	public partial class ItShopMySql : OpenAccessContext, IItShopMySqlUnitOfWork
 	{
         private static string connectionStringName = @"ItShopMySql";
 			
 		private static BackendConfiguration backend = GetBackendConfiguration();
 				
-		private static MetadataSource metadataSource = new ItShopMetadataSource();
+		private static MetadataSource metadataSource = new ItShopMySqlMetadataSource();
 		
-		public ItShop()
+		public ItShopMySql()
 			:base(connectionStringName, backend, metadataSource)
 		{ }
 		
-		public ItShop(string connection)
+		public ItShopMySql(string connection)
 			:base(connection, backend, metadataSource)
 		{ }
 		
-		public ItShop(BackendConfiguration backendConfiguration)
+		public ItShopMySql(BackendConfiguration backendConfiguration)
 			:base(connectionStringName, backendConfiguration, metadataSource)
 		{ }
 			
-		public ItShop(string connection, MetadataSource metadataSource)
+		public ItShopMySql(string connection, MetadataSource metadataSource)
 			:base(connection, backend, metadataSource)
 		{ }
 		
-		public ItShop(string connection, BackendConfiguration backendConfiguration, MetadataSource metadataSource)
+		public ItShopMySql(string connection, BackendConfiguration backendConfiguration, MetadataSource metadataSource)
 			:base(connection, backendConfiguration, metadataSource)
 		{ }
 			
@@ -69,14 +69,16 @@ namespace ItShop.Data.MySQL
         }
 
 		/// <summary>
-		/// Allows you to customize the BackendConfiguration of ItShop.
+		/// Allows you to customize the BackendConfiguration of ItShopMySql.
 		/// </summary>
-		/// <param name="config">The BackendConfiguration of ItShop.</param>
+		/// <param name="config">The BackendConfiguration of ItShopMySql.</param>
 		static partial void CustomizeBackendConfiguration(ref BackendConfiguration config);
 		
 	}
+
+
 	
-	public interface IItShopUnitOfWork : IUnitOfWork
+	public interface IItShopMySqlUnitOfWork : IUnitOfWork
 	{
 	}
 }

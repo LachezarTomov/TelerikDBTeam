@@ -20,16 +20,16 @@ using Telerik.OpenAccess.Metadata.Fluent;
 using Telerik.OpenAccess.Metadata.Fluent.Advanced;
 using Telerik.OpenAccess.Metadata.Relational;
 
-namespace ItShop.Data.MySQL
+namespace ItShop.MySql
 {
 
-	public partial class ItShopMetadataSource : FluentMetadataSource
+	public partial class ItShopMySqlMetadataSource : FluentMetadataSource
 	{
 		
 		protected override IList<MappingConfiguration> PrepareMapping()
 		{
 			List<MappingConfiguration> mappingConfigurations = new List<MappingConfiguration>();
-
+           
             var productMapping = new MappingConfiguration<ProductMySql>();
             productMapping.MapType(product => new
             {
@@ -40,17 +40,16 @@ namespace ItShop.Data.MySQL
                 ManufacturerId = product.ManufacturerId,
                 CategoryId = product.CategoryId
             }).ToTable("EntityTest");
-            //productMapping.HasProperty(p => p.ProductID).IsIdentity();
+            productMapping.HasProperty(p => p.ProductID).IsIdentity();
 
             mappingConfigurations.Add(productMapping);
-
 			return mappingConfigurations;
 		}
 		
 		protected override void SetContainerSettings(MetadataContainer container)
 		{
-			container.Name = "ItShop";
-			container.DefaultNamespace = "ItShop.Data.MySQL";
+			container.Name = "ItShopMySql";
+			container.DefaultNamespace = "ItShop.MySql";
 			container.NameGenerator.SourceStrategy = Telerik.OpenAccess.Metadata.NamingSourceStrategy.Property;
 			container.NameGenerator.RemoveCamelCase = false;
 		}
