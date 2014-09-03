@@ -7,14 +7,14 @@
     {
         public Manufacturer(string name, string description, string manager)
         {
-            //this.ManufacturerID = ObjectId.GenerateNewId().ToString();
+            this._id = ObjectId.GenerateNewId().ToString();
             this.ManufacturerName = name;
             this.Description = description;
             this.CEO = manager;
         }
 
-        //[BsonRepresentation(BsonType.ObjectId)]
-        //public string ManufacturerID { get; set; }
+        [BsonRepresentation(BsonType.ObjectId)]
+        public string _id { get; set; }
 
         public string ManufacturerName { get; set; }
 
