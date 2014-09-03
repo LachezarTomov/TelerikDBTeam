@@ -1,1 +1,0 @@
-        private $fieldType#if($isNullable)?#end#if($isArrayType)[]#end $fieldName;#if($isPk || $isInverse) //#end#if($isPk) pk #end#if($isInverse) inverse $inverse#end
