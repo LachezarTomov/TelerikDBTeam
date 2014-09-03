@@ -1,19 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Data.Entity.Validation;
-using System.Data.Entity;
-using MongoDB.Driver;
-using MongoDB.Bson;
-
+﻿using ExcelManager;
 using ItShop.Data;
 using ItShop.Model;
-using ItShop.Data.Migrations;
 using ItShop.MySql;
-using ExcelManager;
-using XMLManager;
+using MongoDB.Bson;
+using MongoDB.Driver;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using PDFManager;
 using ZipFileManager;
-
+using MongoDB.Data;
 namespace ItShop.ConsoleClient
 {
     public class ItShopConsoleClient
@@ -23,7 +19,9 @@ namespace ItShop.ConsoleClient
          //Database.SetInitializer( new MigrateDatabaseToLatestVersion<ItShopDbContext, Configuration>());
 
             var db = new ItShopDbContext();
-            
+
+            MongoDataConverter.ConvertData();
+
             //Console.WriteLine(db.Products.Any()); 
             //FillData();
             /* 
@@ -32,8 +30,13 @@ namespace ItShop.ConsoleClient
 
             MySqlManager.UpdateDatabase();
             MySqlManager.InsertIntoMySql("test.txt");
+            var testPdf = new PDFReporter(db);
 
-   //         ExcelManager.ExcelReader.ReadFromExcel2003File();
+            DateTime fromDate = new DateTime(2013, 7, 20, 0, 0, 0);
+            DateTime toDate = new DateTime(2013, 7, 21, 23, 59, 59);
+
+            testPdf.GeneratePdfSalesReport("Telerik Sales Report", new[] {fromDate, toDate });
+   //         ExctestPelManager.ExcelReader.ReadFromExcel2003File();
             ExcelWriter.CreateExcel2007PlusFile();
             /*
              * END OF TESTS
@@ -44,22 +47,15 @@ namespace ItShop.ConsoleClient
             //XMLWriter xmlWriter = new XMLWriter();
             //xmlWriter.SaveSalesReportToXML(fromDate, toDate, "report.xml");
 
-           // ZipExcelParser parserFromExcel = new ZipExcelParser(db);
-            //IList<Sale> sales = parserFromExcel.LoadData();// to load data to the server tomorrow
+            ZipExcelParser parserFromExcel = new ZipExcelParser(db);
+            IList<Sale> sales = parserFromExcel.LoadData();// to load data to the server tomorrow
 
-            //foreach (var sale in sales)
-            //{
-            //    Console.Write("Store id:" + sale.StoreId);
-            //    Console.Write("Sale date:" + sale.SaleDate);
-            //    Console.WriteLine();
-            //    foreach (var saleDetail in sale.SaleDetails)
-            //    {
-            //        Console.Write("Price: " + saleDetail.SalePrice + " ");
-            //        Console.Write("Quantity: " + saleDetail.Quantity + " ");
-            //        Console.WriteLine();
-            //    }
+            foreach (var sale in sales)
+            {
+                db.Sales.Add(sale);
+            }
 
-            //}
+            //db.SaveChanges();
 
            // // Load XML File to save in MSSQL DB
            // XMLReader xmlReader = new XMLReader();

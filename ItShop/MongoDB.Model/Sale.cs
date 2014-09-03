@@ -15,8 +15,8 @@
             this.Date = date;
         }
 
-        [BsonRepresentation(BsonType.ObjectId)]
-        public string _id { get; set; }
+        //[BsonRepresentation(BsonType.ObjectId)]
+        //public string _id { get; set; }
 
         public string Store { get; set; }
 

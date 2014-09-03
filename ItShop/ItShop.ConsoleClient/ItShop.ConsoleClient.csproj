@@ -9,10 +9,11 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ItShop.ConsoleClient</RootNamespace>
     <AssemblyName>ItShop.ConsoleClient</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
     <RestorePackages>true</RestorePackages>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -85,6 +86,26 @@
     <ProjectReference Include="..\ItShop.MySql\ItShop.MySql.csproj">
       <Project>{7a04a6fa-f142-41f1-beac-a080ce95dd9f}</Project>
       <Name>ItShop.MySql</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MongoDB.Data\MongoDB.Data.csproj">
+      <Project>{1169f0fb-21e3-47a4-94e6-0f7041dbd9b4}</Project>
+      <Name>MongoDB.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MongoDB.Model\MongoDB.Model.csproj">
+      <Project>{0adf6883-fac0-48e4-80e7-399e90213a61}</Project>
+      <Name>MongoDB.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PDFManager\PDFManager.csproj">
+      <Project>{5b830f58-72a7-4271-9325-e0a790cc5d77}</Project>
+      <Name>PDFManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SQLDataBaseController\SQLDataBaseController.csproj">
+      <Project>{9cb6d94c-470d-41f5-9514-245a30ee9728}</Project>
+      <Name>SQLDataBaseController</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SQLightManager\SQLightManager.csproj">
+      <Project>{8e3c3d88-1fe1-484f-a404-4242ce1afde0}</Project>
+      <Name>SQLightManager</Name>
     </ProjectReference>
     <ProjectReference Include="..\XMLManager\XMLManager.csproj">
       <Project>{8baf2cb6-d6a6-4207-a8fe-97fbab730476}</Project>

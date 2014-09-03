@@ -16,12 +16,13 @@
        
         public PDFReporter(ItShopDbContext db)
         {
-            this.dataBase = db;//or new
+            this.dataBase = db;
         }
 
         public ItShopDbContext dataBase { get; set; }
 
         public void GeneratePdfSalesReport(string documentName, DateTime[] dates)
+
         {
             var headerFontStyle = PDFTextStyleController.SetFontStyle("Arial", 14, Font.BOLD);
             var productNamesFontStyle = PDFTextStyleController.SetFontStyle("Arial", 10, Font.BOLD);
@@ -60,7 +61,6 @@
             }
            
             document.Add(table);
-
             document.Close();
         }
 

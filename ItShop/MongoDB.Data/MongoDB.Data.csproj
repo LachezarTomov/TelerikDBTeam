@@ -69,10 +69,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ItShop.ConsoleClient\ItShop.ConsoleClient.csproj">
-      <Project>{815874ff-5612-4e48-919a-3cbd5ef3f5ba}</Project>
-      <Name>ItShop.ConsoleClient</Name>
-    </ProjectReference>
     <ProjectReference Include="..\ItShop.Data\ItShop.Data.csproj">
       <Project>{ae066734-8594-4678-b0f9-3d087ec42bcb}</Project>
       <Name>ItShop.Data</Name>
