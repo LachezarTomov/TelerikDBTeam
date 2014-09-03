@@ -7,14 +7,14 @@
     {
         public Store(string name, string address, string town)
         {
-           // this.StoreID = ObjectId.GenerateNewId().ToString();
+            //this._id = ObjectId.GenerateNewId().ToString();
             this.StoreName = name;
             this.Address = address;
             this.Town = town;     
         }
 
-        //[BsonRepresentation(BsonType.ObjectId)]
-        //public string StoreID { get; set; }
+        [BsonRepresentation(BsonType.ObjectId)]
+        public string _id { get; set; }
 
         public string StoreName { get; set; }
 

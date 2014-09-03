@@ -2,9 +2,10 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.ComponentModel;
     using System.Linq;
 
-    public class Product
+    public class Product : System.ComponentModel.INotifyPropertyChanged
     {
         private ICollection<SaleDetail> saleDetails;
 
@@ -28,6 +29,8 @@
         public int CategoryId { get; set; }
 
         public virtual Category Category { get; set; }
+
+        public event PropertyChangedEventHandler PropertyChanged;
 
         public virtual ICollection<SaleDetail> SaleDetails
         {

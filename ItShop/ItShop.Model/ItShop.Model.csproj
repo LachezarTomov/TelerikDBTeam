@@ -67,6 +67,8 @@
   <Target Name="BeforeBuild">
   </Target>
   <Target Name="AfterBuild">
+     "C:\Program Files (x86)\Telerik\Data Access\sdk\venhance" -assembly:ItShop.Model.dll
   </Target>
-  -->
+  --> 
+  <Import Project="$(MSBuildExtensionsPath)\OpenAccess.targets" />
 </Project>

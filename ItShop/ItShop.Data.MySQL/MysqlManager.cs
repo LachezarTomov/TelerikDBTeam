@@ -5,13 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 using Telerik.OpenAccess;
 
-namespace ItShop.Data.MySql
+namespace ItShop.Data.MySQL
 {
     public static class MysqlManager
     {
         public static void UpdateDatabase()
         {
-            using (var context = new FluentModel())
+            using (var context = new ItShop())
             {
                 var schemaHandler = context.GetSchemaHandler();
                 EnsureDB(schemaHandler);
