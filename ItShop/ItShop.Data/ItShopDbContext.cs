@@ -19,6 +19,21 @@ namespace ItShop.Data
 
         }
 
+       //protected override void OnModelCreating(DbModelBuilder modelBuilder)
+       //{
+       //    modelBuilder.Entity<ProductsInStock>()
+       //        .HasRequired(p => p.ProductId)
+       //        .WithRequiredDependent(c => c.
+       //        .HasMany(p => p.ProductId)
+       //        .WithMany(t => t.Posts)
+       //        .Map(mc =>
+       //        {
+       //            mc.ToTable("PostJoinTag");
+       //            mc.MapLeftKey("PostId");
+       //            mc.MapRightKey("TagId");
+       //        });
+       //}
+
         public IDbSet<Town> Towns { get; set; }
 
         public IDbSet<Manufacturer> Manufacturers { get; set; }
@@ -36,5 +51,7 @@ namespace ItShop.Data
         public IDbSet<SaleDetail> SaleDetails { get; set; }
 
         public IDbSet<StoresExpenses> StoresExpenses { get; set; }
+
+        public IDbSet<ProductsInStock> ProductsInStock { get; set; }
     }
 }

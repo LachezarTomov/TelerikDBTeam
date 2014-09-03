@@ -3,6 +3,7 @@
     using System;
     using System.Collections.Generic;
     using System.ComponentModel;
+    using System.ComponentModel.DataAnnotations;
     using System.Linq;
 
     public class Product : System.ComponentModel.INotifyPropertyChanged
@@ -12,8 +13,11 @@
         public Product()
         {
             this.SaleDetails = new HashSet<SaleDetail>();
+         //   this.ProductsInStocks = new HashSet<ProductsInStock>();
+
         }
 
+      //  [Key]
         public int ProductId { get; set; }
 
         public string ProductName { get; set; }
@@ -31,6 +35,8 @@
         public virtual Category Category { get; set; }
 
         public event PropertyChangedEventHandler PropertyChanged;
+
+     //   public virtual ICollection <ProductsInStock> ProductsInStocks { get; set; }
 
         public virtual ICollection<SaleDetail> SaleDetails
         {

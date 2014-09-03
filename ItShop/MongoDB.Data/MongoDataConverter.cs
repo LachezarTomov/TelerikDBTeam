@@ -13,8 +13,8 @@
             var reader = new MongoDataReader();
             using (db)
             {
-                //ConvertManufacturersData(db, reader);
-                //ConvertStoresData(db, reader);
+                ConvertManufacturersData(db, reader);
+                ConvertStoresData(db, reader);
                 ConvertProductsData(db,reader);               
                 //ConvertSalesData(db,reader);
             }
@@ -23,7 +23,7 @@
         private static void ConvertManufacturersData(ItShopDbContext db, MongoDataReader reader)
         {
             var manufacturers = reader.GetManufacturers();
-
+           
             foreach (var currManufacturer in manufacturers)
             {
                 //to check query

@@ -9,7 +9,7 @@
        
         public Product(string name, string category, string manufacturer, decimal price)
         {
-            //this.ProductID = ObjectId.GenerateNewId().ToString();
+            this._id = ObjectId.GenerateNewId().ToString();
             this.ProductName = name;
             this.Category = category;
             this.Manufacturer = manufacturer;

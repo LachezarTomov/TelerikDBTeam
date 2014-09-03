@@ -7,7 +7,7 @@
     {
         public Store(string name, string address, string town)
         {
-            //this._id = ObjectId.GenerateNewId().ToString();
+            this._id = ObjectId.GenerateNewId().ToString();
             this.StoreName = name;
             this.Address = address;
             this.Town = town;     
