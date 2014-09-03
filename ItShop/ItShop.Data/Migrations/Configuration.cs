@@ -11,7 +11,7 @@ namespace ItShop.Data.Migrations
         {
             this.AutomaticMigrationsEnabled = true;
             this.AutomaticMigrationDataLossAllowed = true;
-            this.ContextKey = "ItShop.Data.ItShopDbContext";
+           // this.ContextKey = "ItShop.Data.ItShopDbContext";
         }
 
         protected override void Seed(ItShopDbContext context)
