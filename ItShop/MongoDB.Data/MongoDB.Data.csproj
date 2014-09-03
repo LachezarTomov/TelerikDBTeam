@@ -33,6 +33,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="MongoDB.Bson">
       <HintPath>..\packages\mongocsharpdriver.1.9.2\lib\net35\MongoDB.Bson.dll</HintPath>
     </Reference>
@@ -40,6 +46,7 @@
       <HintPath>..\packages\mongocsharpdriver.1.9.2\lib\net35\MongoDB.Driver.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -48,6 +55,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MongoDataConverter.cs" />
     <Compile Include="MongoDataInserter.cs" />
     <Compile Include="MongoDataReader.cs" />
     <Compile Include="MongoDataSeeder.cs" />
@@ -59,6 +67,18 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ItShop.ConsoleClient\ItShop.ConsoleClient.csproj">
+      <Project>{815874ff-5612-4e48-919a-3cbd5ef3f5ba}</Project>
+      <Name>ItShop.ConsoleClient</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ItShop.Data\ItShop.Data.csproj">
+      <Project>{ae066734-8594-4678-b0f9-3d087ec42bcb}</Project>
+      <Name>ItShop.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ItShop.Model\ItShop.Model.csproj">
+      <Project>{099f93da-123f-490c-a041-82ae961f4318}</Project>
+      <Name>ItShop.Model</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MongoDB.Model\MongoDB.Model.csproj">
       <Project>{0adf6883-fac0-48e4-80e7-399e90213a61}</Project>
       <Name>MongoDB.Model</Name>

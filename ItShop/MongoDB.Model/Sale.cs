@@ -16,7 +16,7 @@
         }
 
         [BsonRepresentation(BsonType.ObjectId)]
-        //public string SaleID { get; set; }
+        public string _id { get; set; }
 
         public string Store { get; set; }
 
