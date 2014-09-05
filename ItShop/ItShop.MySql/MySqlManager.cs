@@ -34,8 +34,6 @@ namespace ItShop.MySql
                 }
                 context.SaveChanges();
             }
-
-            
         }
 
         public static void UpdateDatabase()

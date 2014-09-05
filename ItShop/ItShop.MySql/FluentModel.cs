@@ -60,7 +60,7 @@ namespace ItShop.MySql
 			return backend;
 		}
 
-        public IQueryable<ProductReport> Products
+        public IQueryable<ProductReport> ProductRepports
         {
             get
             {

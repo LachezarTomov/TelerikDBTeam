@@ -1,0 +1,15 @@
+{"ProductName":"Dell Inspiron 3537","CategoryName":"laptop","TotalQuantitySold":867,"ByingPrice":899.00,"ReportStartDate":"2013-07-20T00:00:00","ReportEndDate":"2013-07-21T23:59:59"}
+{"ProductName":"Toshiba Satellite L50-B-16C","CategoryName":"laptop","TotalQuantitySold":203,"ByingPrice":1369.00,"ReportStartDate":"2013-07-20T00:00:00","ReportEndDate":"2013-07-21T23:59:59"}
+{"ProductName":"ASUS G750JZ-T4039D","CategoryName":"laptop","TotalQuantitySold":416,"ByingPrice":2779.00,"ReportStartDate":"2013-07-20T00:00:00","ReportEndDate":"2013-07-21T23:59:59"}
+{"ProductName":"Acer Аspire ES1-511 L50-B-16C","CategoryName":"laptop","TotalQuantitySold":801,"ByingPrice":549.00,"ReportStartDate":"2013-07-20T00:00:00","ReportEndDate":"2013-07-21T23:59:59"}
+{"ProductName":"Apple MacBook Air","CategoryName":"laptop","TotalQuantitySold":908,"ByingPrice":1825.00,"ReportStartDate":"2013-07-20T00:00:00","ReportEndDate":"2013-07-21T23:59:59"}
+{"ProductName":"Samsung Galaxy Tab 4 10.1 (SM-T535)","CategoryName":"tablet","TotalQuantitySold":246,"ByingPrice":689.00,"ReportStartDate":"2013-07-20T00:00:00","ReportEndDate":"2013-07-21T23:59:59"}
+{"ProductName":"ASUS MeMO Pad 7 (ME176C) 8GB","CategoryName":"tablet","TotalQuantitySold":945,"ByingPrice":259.00,"ReportStartDate":"2013-07-20T00:00:00","ReportEndDate":"2013-07-21T23:59:59"}
+{"ProductName":"Apple iPad Mini Retina Wi-Fi 16GB","CategoryName":"tablet","TotalQuantitySold":953,"ByingPrice":699.00,"ReportStartDate":"2013-07-20T00:00:00","ReportEndDate":"2013-07-21T23:59:59"}
+{"ProductName":"Dell Venue 7","CategoryName":"tablet","TotalQuantitySold":1214,"ByingPrice":269.00,"ReportStartDate":"2013-07-20T00:00:00","ReportEndDate":"2013-07-21T23:59:59"}
+{"ProductName":"HP Slate 10 HD 3603eu","CategoryName":"tablet","TotalQuantitySold":1387,"ByingPrice":399.00,"ReportStartDate":"2013-07-20T00:00:00","ReportEndDate":"2013-07-21T23:59:59"}
+{"ProductName":"Acer Predator G3-605","CategoryName":"pc","TotalQuantitySold":648,"ByingPrice":1599.00,"ReportStartDate":"2013-07-20T00:00:00","ReportEndDate":"2013-07-21T23:59:59"}
+{"ProductName":"Mac Pro","CategoryName":"pc","TotalQuantitySold":1309,"ByingPrice":5999.00,"ReportStartDate":"2013-07-20T00:00:00","ReportEndDate":"2013-07-21T23:59:59"}
+{"ProductName":"ASUS Essentio CG8250","CategoryName":"pc","TotalQuantitySold":908,"ByingPrice":1099.00,"ReportStartDate":"2013-07-20T00:00:00","ReportEndDate":"2013-07-21T23:59:59"}
+{"ProductName":"Dell Alienware X51","CategoryName":"pc","TotalQuantitySold":531,"ByingPrice":1699.00,"ReportStartDate":"2013-07-20T00:00:00","ReportEndDate":"2013-07-21T23:59:59"}
+{"ProductName":"HP ProDesk 600 G1","CategoryName":"pc","TotalQuantitySold":819,"ByingPrice":936.00,"ReportStartDate":"2013-07-20T00:00:00","ReportEndDate":"2013-07-21T23:59:59"}

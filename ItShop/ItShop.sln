@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30501.0
+VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ItShop.Model", "ItShop.Model\ItShop.Model.csproj", "{099F93DA-123F-490C-A041-82AE961F4318}"
 EndProject
@@ -19,13 +19,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XMLManager", "XMLManager\XM
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZipFileManager", "ZipFileManager\ZipFileManager.csproj", "{7C367E4B-A924-46F8-8095-9FA8EFE5FCE3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLightManager", "SQLightManager\SQLightManager.csproj", "{8E3C3D88-1FE1-484F-A404-4242CE1AFDE0}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDFManager", "PDFManager\PDFManager.csproj", "{5B830F58-72A7-4271-9325-E0A790CC5D77}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLDataBaseController", "SQLDataBaseController\SQLDataBaseController.csproj", "{9CB6D94C-470D-41F5-9514-245A30EE9728}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ItShop.MySql", "ItShop.MySql\ItShop.MySql.csproj", "{7A04A6FA-F142-41F1-BEAC-A080CE95DD9F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonReporter", "JsonReporter\JsonReporter.csproj", "{6D295B75-CADC-4B6D-A33C-A67B1E0CB2E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLiteManager", "SQLiteManager\SQLiteManager.csproj", "{1C13E423-B018-4698-BC25-39F3BD832239}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -65,22 +65,22 @@ Global
 		{7C367E4B-A924-46F8-8095-9FA8EFE5FCE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C367E4B-A924-46F8-8095-9FA8EFE5FCE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C367E4B-A924-46F8-8095-9FA8EFE5FCE3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8E3C3D88-1FE1-484F-A404-4242CE1AFDE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8E3C3D88-1FE1-484F-A404-4242CE1AFDE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8E3C3D88-1FE1-484F-A404-4242CE1AFDE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8E3C3D88-1FE1-484F-A404-4242CE1AFDE0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5B830F58-72A7-4271-9325-E0A790CC5D77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5B830F58-72A7-4271-9325-E0A790CC5D77}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B830F58-72A7-4271-9325-E0A790CC5D77}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B830F58-72A7-4271-9325-E0A790CC5D77}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9CB6D94C-470D-41F5-9514-245A30EE9728}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9CB6D94C-470D-41F5-9514-245A30EE9728}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9CB6D94C-470D-41F5-9514-245A30EE9728}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9CB6D94C-470D-41F5-9514-245A30EE9728}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7A04A6FA-F142-41F1-BEAC-A080CE95DD9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7A04A6FA-F142-41F1-BEAC-A080CE95DD9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A04A6FA-F142-41F1-BEAC-A080CE95DD9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A04A6FA-F142-41F1-BEAC-A080CE95DD9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D295B75-CADC-4B6D-A33C-A67B1E0CB2E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D295B75-CADC-4B6D-A33C-A67B1E0CB2E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D295B75-CADC-4B6D-A33C-A67B1E0CB2E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D295B75-CADC-4B6D-A33C-A67B1E0CB2E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C13E423-B018-4698-BC25-39F3BD832239}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C13E423-B018-4698-BC25-39F3BD832239}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C13E423-B018-4698-BC25-39F3BD832239}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C13E423-B018-4698-BC25-39F3BD832239}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

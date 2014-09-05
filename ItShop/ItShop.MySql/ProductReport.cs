@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ItShop.MySql
+﻿namespace ItShop.MySql
 {
+    using System;
+
     public class ProductReport
     {
         public int ProductReportID { get; set; }

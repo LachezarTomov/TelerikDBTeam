@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stores-expenses>
+	<store name="Laptop.bg" id="1">
+		<expenses date="02.2014">50.50</expenses>
+		<expenses date="03.2014">150.20</expenses>
+		<expenses date="04.2014">77.00</expenses>
+	</store>
+	<store name="Most Computers" id="2">
+		<expenses date="02.2014">60.10</expenses>
+		<expenses date="03.2014">159.20</expenses>
+		<expenses date="04.2014">71.50</expenses>
+		<expenses date="05.2014">120.20</expenses>
+		<expenses date="06.2014">19.00</expenses>
+	</store>
+	<store name="Most Computers - Easy Office" id="5">
+		<expenses date="01.2014">123.50</expenses>
+		<expenses date="05.2014">21.10</expenses>
+		<expenses date="05.2014">45.50</expenses>
+		<expenses date="07.2014">334.30</expenses>
+		<expenses date="09.2014">99.00</expenses>
+	</store>
+		<store name="Most Computers - Digit" id="6">
+		<expenses date="02.2014">33.40</expenses>
+		<expenses date="06.2014">51.15</expenses>
+		<expenses date="09.2014">78.50</expenses>
+		<expenses date="011.2014">234.30</expenses>
+		<expenses date="12.2014">67.28</expenses>
+	</store>
+</stores-expenses>

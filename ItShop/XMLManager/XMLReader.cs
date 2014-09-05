@@ -10,12 +10,12 @@ namespace XMLManager
 {
     public class XMLReader
     {
-        string pathToXmlFile = "..\\..\\";
+        private const string PathToXmlFile =@"..\..\..\..\InputFiles\";
         public IList<Store> LoadStoreReportsFromXml(string fileName)
         {
             var listOfStores = new List<Store>();
 
-            using (XmlReader reader = XmlReader.Create(pathToXmlFile+fileName))
+            using (XmlReader reader = XmlReader.Create(PathToXmlFile+fileName))
             {
                 Store store = new Store();
                 int storeId = 0;

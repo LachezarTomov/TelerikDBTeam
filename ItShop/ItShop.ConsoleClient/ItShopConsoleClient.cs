@@ -10,65 +10,31 @@ using System.Linq;
 using PDFManager;
 using ZipFileManager;
 using MongoDB.Data;
+using JsonReporter;
+using SQLiteManager;
+using XMLManager;
+
 namespace ItShop.ConsoleClient
 {
+
     public class ItShopConsoleClient
     {
-        static void Main()
+        private static void FillStoresExpensesInMongoDB(IList<Store> storesList)
         {
-         //Database.SetInitializer( new MigrateDatabaseToLatestVersion<ItShopDbContext, Configuration>());
+            MongoClient client = new MongoClient(); // connect to localhost
+            MongoServer server = client.GetServer();
+            MongoDatabase db = server.GetDatabase("ItShop");
 
-            var db = new ItShopDbContext();
+            MongoCollection<Store> expensesReports = db.GetCollection<Store>("ExpensesReports");
 
-            MongoDataConverter.ConvertData();
-
-            //Console.WriteLine(db.Products.Any()); 
-            //FillData();
-            /* 
-             * TEST MILAN
-             */
-
-            MySqlManager.UpdateDatabase();
-            MySqlManager.InsertIntoMySql("test.txt");
-            var testPdf = new PDFReporter(db);
-
-            DateTime fromDate = new DateTime(2013, 7, 20, 0, 0, 0);
-            DateTime toDate = new DateTime(2013, 7, 21, 23, 59, 59);
-
-            testPdf.GeneratePdfSalesReport("Telerik Sales Report", new[] {fromDate, toDate });
-   //         ExctestPelManager.ExcelReader.ReadFromExcel2003File();
-            ExcelWriter.CreateExcel2007PlusFile();
-            /*
-             * END OF TESTS
-             */ 
-            //DateTime fromDate = new DateTime(2014, 8, 30, 0, 0, 0);
-            //DateTime toDate = new DateTime(2014, 9, 30, 23, 59, 59);
-
-            //XMLWriter xmlWriter = new XMLWriter();
-            //xmlWriter.SaveSalesReportToXML(fromDate, toDate, "report.xml");
-
-            ZipExcelParser parserFromExcel = new ZipExcelParser(db);
-            IList<Sale> sales = parserFromExcel.LoadData();// to load data to the server tomorrow
-
-            foreach (var sale in sales)
+            foreach (var store in storesList)
             {
-                db.Sales.Add(sale);
+                expensesReports.Insert(store);
             }
-
-            //db.SaveChanges();
-
-           // // Load XML File to save in MSSQL DB
-           // XMLReader xmlReader = new XMLReader();
-            
-           // // Load data XML data in MSSQL
-           // IList<Store> expensesList = xmlReader.LoadStoreReportsFromXml("expenses.xml");
-           //// SaveExpensesReportsInMSSQL(expensesList);
-          
         }
-
-        private static void SaveExpensesReportsInMSSQL(IList<Store> storesList)
+    
+        private static void SaveExpensesReportsInMssql(IList<Store> storesList, ItShopDbContext db)
         {
-            var db = new ItShopDbContext();
             using (db)
             {
                 foreach (var store in storesList)
@@ -90,65 +56,127 @@ namespace ItShop.ConsoleClient
             }
         }
 
-        private void FillStoresExpensesInMongoDB(IList<StoresExpenses> expensesList)
+        private static void E01LoadExcelReportsFromZip(ItShopDbContext db)
         {
-            MongoClient client = new MongoClient(); // connect to localhost
-            MongoServer server = client.GetServer();
-            MongoDatabase db = server.GetDatabase("StoreExpensesReports");
+            ZipExcelParser parserFromExcel = new ZipExcelParser(db);
+            IList<Sale> sales = parserFromExcel.LoadData();
 
-            MongoCollection<BsonDocument> expensesReports = db.GetCollection<BsonDocument>("ExpensesReports");
-
-            foreach (var expense in expensesList)
+            foreach (var sale in sales)
             {
-                BsonDocument document = new BsonDocument {
-                    { "StoreId", expense.StoreId },
-                    { "ForDate", expense.ForDate },
-                    { "Amount", expense.Amount.ToString() }
-                };
-
-                expensesReports.Insert(document);
+                db.Sales.Add(sale);
             }
-            
+
+            db.SaveChanges();
         }
 
-        private static void FillData()
+        private static void E02GeneratePdfReport(ItShopDbContext db)
+        {
+            var testPdf = new PDFReporter(db);
+
+            DateTime firstDate = new DateTime(2013, 7, 20, 0, 0, 0);
+            DateTime secondDate = new DateTime(2013, 7, 21, 0, 0, 0);
+            DateTime thirdDate = new DateTime(2013, 7, 22, 0, 0, 0);
+            DateTime forthDate = new DateTime(2013, 7, 23, 0, 0, 0);
+
+            testPdf.GeneratePdfSalesReport("Telerik Sales Report",
+                new[] { firstDate, secondDate, thirdDate, forthDate });
+        }
+
+        private static void E03GenerateXmlReport(ItShopDbContext db)
+        {
+            DateTime fromDate = new DateTime(2010, 8, 30, 0, 0, 0);
+            DateTime toDate = new DateTime(2014, 9, 30, 23, 59, 59);
+
+            XMLWriter xmlWriter = new XMLWriter();
+            xmlWriter.SaveSalesReportToXML(fromDate, toDate, "report.xml");
+        }
+
+        private static void E04GenerateJsonFiles(ItShopDbContext db, DateTime startDate, DateTime endDate)
+        {
+            var jsonReporter = new JsonReporterer(db);
+            jsonReporter.WriteJsonReportToTxtFile(startDate, endDate);
+        }
+
+        private static void E04LoadJsonToMySql(string path)
+        {
+            MySqlManager.UpdateDatabase();
+            MySqlManager.InsertIntoMySql(path);
+        }
+
+        private static void E05LoadDataFromXmlToMssql(ItShopDbContext db)
+        {
+            XMLReader xmlReader = new XMLReader();
+            IList<Store> expensesList = xmlReader.LoadStoreReportsFromXml("expenses.xml");
+            SaveExpensesReportsInMssql(expensesList, db);
+
+            // Filling the mangalDB
+            FillStoresExpensesInMongoDB(expensesList);
+        }
+
+        private static void GenerateExcel2007Report()
+        {
+            var mySqlContext = new ItShopMySql();
+            var sqLiteManager = new SQLiteReader();
+            var dictWithMarge = sqLiteManager.GetProductsMarge();
+            var allReports = mySqlContext.ProductRepports.Select(pr => pr);
+
+            List<Dictionary<string, string>> finalReports = new List<Dictionary<string, string>>();
+            foreach (var report in allReports)
+            {
+                var newDict = new Dictionary<string, string>();
+
+                var marge = dictWithMarge[report.ProductName];
+                var sellingPrice = (report.BuyingPrice + (report.BuyingPrice * marge / 100)).ToString();
+                newDict.Add("Product Name", report.ProductName);
+                newDict.Add("Category Name", report.CategoryName);
+                newDict.Add("From", report.ReportStartDate.ToString());
+                newDict.Add("To", report.ReportEndDate.ToString());
+                newDict.Add("Total Quantity Sold", report.TotalQuantitySold.ToString());
+                newDict.Add("Buying Price", report.BuyingPrice.ToString());
+                newDict.Add("Selling Price", sellingPrice);
+
+                finalReports.Add(newDict);
+            }
+
+            ExcelWriter.CreateExcel2007PlusFile(finalReports);
+        }
+
+        static void Main()
         {
             var db = new ItShopDbContext();
-            var store = new Store { StoreName = "Main store" };
-            db.Stores.Add(store);
-            db.SaveChanges();
+            //MongoDB Seeder
+            
+           MongoDataConverter.ConvertData();
 
-            var product1 = new Product { ProductName = "Laptop HP 556 Cromebook", BasePrice = 1024.20m };
-            var product2 = new Product { ProductName = "Laptop HP 6T Elitebook", BasePrice = 489.00m };
-            var product3 = new Product { ProductName = "Laptop Toshiba Satellite C50-B-14", BasePrice = 620.00m };
 
-            db.Products.Add(product1);
-            db.Products.Add(product2);
-            db.Products.Add(product3);
-            db.SaveChanges();
+           E01LoadExcelReportsFromZip(db);
+           Console.WriteLine("Ex1 - OK");
+           E02GeneratePdfReport(db);
+           Console.WriteLine("Ex2 - OK");
+           E03GenerateXmlReport(db);
+           Console.WriteLine("Ex3 - OK");
+           DateTime firstDate = new DateTime(2013, 7, 20, 0, 0, 0);
+           DateTime secondDate = new DateTime(2013, 7, 21, 0, 0, 0);
+           E04GenerateJsonFiles(db, firstDate, secondDate);
+           Console.WriteLine("Ex4 - OK");
+           E05LoadDataFromXmlToMssql(db);
+           Console.WriteLine("Ex5 - OK");
+            GenerateExcel2007Report();
+            Console.WriteLine("Ex6 - OK");
+            //Console.WriteLine(db.Products.Any()); 
+            //FillData();
 
-            var sale = new Sale
-            {
-                StoreId = store.StoreId,
-                SaleDate = DateTime.Now
-            };
+            //;
+         
+            // ExctestPelManager.ExcelReader.ReadFromExcel2003File();
+           
+            // ExcelWriter.CreateExcel2007PlusFile();
+    
 
-            sale.SaleDetails.Add(new SaleDetail
-            {
-                ProductId = product1.ProductId,
-                Quantity = 1,
-                SalePrice = product1.BasePrice * 1.2m
-            });
-
-            sale.SaleDetails.Add(new SaleDetail
-            {
-                ProductId = product3.ProductId,
-                Quantity = 2,
-                SalePrice = product3.BasePrice
-            });
-
-            db.Sales.Add(sale);
-            db.SaveChanges();
+          
+          
         }
-    }
+
+        
+        }
 }

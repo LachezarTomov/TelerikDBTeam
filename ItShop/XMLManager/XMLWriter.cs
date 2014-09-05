@@ -11,6 +11,8 @@ namespace XMLManager
 {
     public class XMLWriter
     {
+        private const string PathToXmlFile = @"..\..\..\..\OutputFiles\";
+
         public void SaveSalesReportToXML(DateTime fromDate, DateTime toDate, string fileName)
         {
             var db = new ItShopDbContext();
@@ -20,9 +22,8 @@ namespace XMLManager
                 .ToList();
 
             Encoding encoding = Encoding.GetEncoding("UTF-8");
-            string pathToXmlFile = "..\\..\\";
 
-            using (XmlTextWriter writer = new XmlTextWriter(pathToXmlFile+fileName, encoding))
+            using (XmlTextWriter writer = new XmlTextWriter(PathToXmlFile+fileName, encoding))
             {
                 writer.Formatting = Formatting.Indented;
                 writer.IndentChar = '\t';

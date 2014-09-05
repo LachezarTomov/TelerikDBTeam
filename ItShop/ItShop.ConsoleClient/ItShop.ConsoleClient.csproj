@@ -16,7 +16,7 @@
     <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformTarget>x64</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,6 +24,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -87,6 +88,10 @@
       <Project>{7a04a6fa-f142-41f1-beac-a080ce95dd9f}</Project>
       <Name>ItShop.MySql</Name>
     </ProjectReference>
+    <ProjectReference Include="..\JsonReporter\JsonReporter.csproj">
+      <Project>{6d295b75-cadc-4b6d-a33c-a67b1e0cb2e2}</Project>
+      <Name>JsonReporter</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MongoDB.Data\MongoDB.Data.csproj">
       <Project>{1169f0fb-21e3-47a4-94e6-0f7041dbd9b4}</Project>
       <Name>MongoDB.Data</Name>
@@ -99,13 +104,9 @@
       <Project>{5b830f58-72a7-4271-9325-e0a790cc5d77}</Project>
       <Name>PDFManager</Name>
     </ProjectReference>
-    <ProjectReference Include="..\SQLDataBaseController\SQLDataBaseController.csproj">
-      <Project>{9cb6d94c-470d-41f5-9514-245a30ee9728}</Project>
-      <Name>SQLDataBaseController</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\SQLightManager\SQLightManager.csproj">
-      <Project>{8e3c3d88-1fe1-484f-a404-4242ce1afde0}</Project>
-      <Name>SQLightManager</Name>
+    <ProjectReference Include="..\SQLiteManager\SQLiteManager.csproj">
+      <Project>{1c13e423-b018-4698-bc25-39f3bd832239}</Project>
+      <Name>SQLiteManager</Name>
     </ProjectReference>
     <ProjectReference Include="..\XMLManager\XMLManager.csproj">
       <Project>{8baf2cb6-d6a6-4207-a8fe-97fbab730476}</Project>

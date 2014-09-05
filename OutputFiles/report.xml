@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sales>
+	<sale date="7/20/2013">
+		<item product="Toshiba Satellite L50-B-16C" price="1369.00" />
+		<item product="ASUS G750JZ-T4039D" price="2779.00" />
+	</sale>
+	<sale date="7/20/2013">
+		<item product="Apple iPad Mini Retina Wi-Fi 16GB" price="699.00" />
+		<item product="Toshiba Satellite L50-B-16C" price="1369.00" />
+	</sale>
+	<sale date="7/21/2013">
+		<item product="ASUS G750JZ-T4039D" price="2779.00" />
+		<item product="Toshiba Satellite L50-B-16C" price="1369.00" />
+	</sale>
+	<sale date="7/21/2013">
+		<item product="ASUS G750JZ-T4039D" price="2779.00" />
+		<item product="Apple iPad Mini Retina Wi-Fi 16GB" price="699.00" />
+	</sale>
+	<sale date="7/22/2013">
+		<item product="ASUS G750JZ-T4039D" price="2779.00" />
+		<item product="Toshiba Satellite L50-B-16C" price="1369.00" />
+		<item product="Apple MacBook Air" price="1825.00" />
+		<item product="Acer Аspire ES1-511 L50-B-16C" price="549.00" />
+		<item product="Apple iPad Mini Retina Wi-Fi 16GB" price="699.00" />
+		<item product="ASUS MeMO Pad 7 (ME176C) 8GB" price="259.00" />
+		<item product="ASUS G750JZ-T4039D" price="2779.00" />
+	</sale>
+	<sale date="7/22/2013">
+		<item product="Acer Аspire ES1-511 L50-B-16C" price="549.00" />
+		<item product="ASUS MeMO Pad 7 (ME176C) 8GB" price="259.00" />
+		<item product="Dell Inspiron 3537" price="899.00" />
+		<item product="ASUS G750JZ-T4039D" price="2779.00" />
+	</sale>
+	<sale date="7/23/2013">
+		<item product="ASUS G750JZ-T4039D" price="2779.00" />
+		<item product="Apple iPad Mini Retina Wi-Fi 16GB" price="699.00" />
+		<item product="ASUS MeMO Pad 7 (ME176C) 8GB" price="259.00" />
+		<item product="Apple MacBook Air" price="1825.00" />
+		<item product="Dell Inspiron 3537" price="899.00" />
+		<item product="Acer Аspire ES1-511 L50-B-16C" price="549.00" />
+	</sale>
+	<sale date="7/23/2013">
+		<item product="Acer Аspire ES1-511 L50-B-16C" price="549.00" />
+		<item product="ASUS MeMO Pad 7 (ME176C) 8GB" price="259.00" />
+		<item product="Apple iPad Mini Retina Wi-Fi 16GB" price="699.00" />
+		<item product="Dell Inspiron 3537" price="899.00" />
+		<item product="Apple MacBook Air" price="1825.00" />
+		<item product="Toshiba Satellite L50-B-16C" price="1369.00" />
+	</sale>
+</sales>

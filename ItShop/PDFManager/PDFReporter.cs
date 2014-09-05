@@ -13,7 +13,7 @@
     {
         private const int GRAY_COLOR = 160;
         private const int WHITE_COLOR = 255;
-       
+        private const string path = @"../../../../OutputFiles/";
         public PDFReporter(ItShopDbContext db)
         {
             this.dataBase = db;
@@ -28,7 +28,7 @@
             var productNamesFontStyle = PDFTextStyleController.SetFontStyle("Arial", 10, Font.BOLD);
             var cellsFontStyle = PDFTextStyleController.SetFontStyle("Arial", 8, Font.NORMAL);
 
-            var document = CreatePdfDocument(documentName);
+            var document = CreatePdfDocument(path+documentName);
             document.Open();
 
             var table = CreatePdfTable(5, new int[] { 4, 2, 3, 5, 2 });

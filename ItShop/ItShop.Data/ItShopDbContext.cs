@@ -21,10 +21,6 @@ namespace ItShop.Data
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-
-           //modelBuilder.Entity<ProductsInStock>()
-           //     .HasKey(ps => new { ps.ProductId, ps.StoreId });
-
             modelBuilder.Entity<Store>()
                 .HasMany(s => s.ProductsInStock)
                 .WithRequired()

@@ -13,7 +13,7 @@
 
     public class ZipExcelParser
     {
-        private string DIRECTORY_ROOT = @"..\..\..\InputDataFiles";  
+        private string DIRECTORY_ROOT = @"..\..\..\..\InputFiles";  
         private const string FilePattern = "*.xls*";
        
         public ZipExcelParser(ItShopDbContext db)
